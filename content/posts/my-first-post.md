@@ -3,7 +3,7 @@ title: "MINGW64 설치오류 the file has been downloaded incorrectly"
 date: 2021-04-24T13:51:22+09:00
 categories: [Setting]
 tags: [mingw, windows, setting]
-draft: true
+draft: false
 ---
 
 
