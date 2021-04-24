@@ -1,4 +1,4 @@
-baseURL = "https://lyra95.github.io/"
+baseURL = "https://lyra95.github.io/blog"
 title = "Things of Everything"
 theme = "hugo-notepadium"
 copyright = "©2019 Notepadium."
