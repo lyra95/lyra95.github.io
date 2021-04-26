@@ -3,7 +3,7 @@ title: "Go 문법(1)"
 date: 2021-04-25T16:22:05+09:00
 categories: [Go]
 tags: [go]
-draft: true
+draft: false
 ---
 참고서적: Tucker의 Go 언어 프로그래밍
 # Variable declaration/Initialization
