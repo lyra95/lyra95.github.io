@@ -1,6 +1,6 @@
 baseURL = "https://lyra95.github.io/"
-url = "docs"
-title = "docs"
+
+title = "docs from JO"
 theme = "zdoc"
 
 defaultContentLanguage = "ko"
