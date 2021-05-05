@@ -9,11 +9,6 @@ tags = [
     "html",
     "themes",
 ]
-categories = [
-    "themes",
-    "syntax",
-]
-series = ["Themes Guide"]
 +++
 
 Lorem est tota propiore conpellat pectoribus de
