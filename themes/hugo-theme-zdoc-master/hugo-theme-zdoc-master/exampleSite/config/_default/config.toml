@@ -1,9 +1,8 @@
-baseURL = "https://lyra95.github.io/"
-
-title = "home"
+baseURL = "http://example.org"
+title = "Hugo Zdoc Theme"
 theme = "zdoc"
 
-defaultContentLanguage = "ko"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 hasCJKLanguage = false
 
