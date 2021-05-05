@@ -3,7 +3,7 @@ logoText = "ZDoc"
 logoType = "short" # long, short
 description = "The ZDoc theme for Hugo example site."
 
-themeOptions = ["dark", "ligth"]
+themeOptions = ["dark", "light"]
 
 useFaviconGenerator = true # https://www.favicon-generator.org/
 

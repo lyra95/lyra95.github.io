@@ -4,9 +4,10 @@ date: 2021-04-25T16:22:05+09:00
 categories: [Go]
 tags: [go, syntax]
 draft: false
-weigth: 1
+weight: 1
 ---
 참고서적: Tucker의 Go 언어 프로그래밍
+
 ## Variable declaration/Initialization
 
 ```go
@@ -16,10 +17,12 @@ a := 10
 ```
 
 ## Type Casting
+
 ```go
 var a int = 10
 var b float64 = float64(a)
 ```
+
 ## Constant declaration/Initialization
 
 ```go
@@ -33,6 +36,7 @@ const PI = 3.14    // 타입 없는 상수
 ```
 
 ## if/switch statments
+
 ```go
 if x:= 10; x > 0 {
     // do something
@@ -65,9 +69,11 @@ switch {    // true dropped
         // do something
 }
 ```
+
 `switch`의 경우 디폴트로 `break`다. `break`를 걸기 싫은 `case`에는 `fallthrough`를 추가하면됨
 
 ## For statment
+
 ```go
 for i:=0; i<10; i++ {
     // do something

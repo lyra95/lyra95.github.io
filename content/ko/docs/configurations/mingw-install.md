@@ -15,10 +15,8 @@ mingw-w64-install.exe를 실행했을때, 설치가 완료되지 못 함. 다음
 
 ## To Reproduce the error
 
-__windows 10 pro 64bit__
-
-__mingw-w64-install.exe__ 실행
-(https://sourceforge.net/projects/mingw-w64/)
+**windows 10 pro 64bit**
+[**mingw-w64-install.exe**](https://sourceforge.net/projects/mingw-w64/) 실행
 
 설치경로 __C:\\__
 
@@ -30,10 +28,9 @@ __mingw-w64-install.exe__ 실행
 | Exception     | seh          |
 | Build revision| 0            |
 
-
 ## Solution
-**x86_64-win32-seh** zip 파일 다운로드
->https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/
+
+[**x86_64-win32-seh**](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/) zip 파일 다운로드
 
 설치하려던 경로에 압축풀기 후, 환경변수 PATH에 **설치경로/mingw64/bin** 등록
 

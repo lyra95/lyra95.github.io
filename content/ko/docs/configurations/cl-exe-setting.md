@@ -28,6 +28,7 @@ Terminal will be reused by tasks, press any key to close it.
 ```
 
 tasks.json
+
 ```json
 {
 	"version": "2.0.0",
@@ -62,7 +63,7 @@ tasks.json
 
 Intellisense c++ configuration(UI)
 
-![This is an image](/images/cl-exe-setting-fig-1.png)
+![fig. 1.](/images/cl-exe-setting-fig-1.png)
 
 ## Solution
 
@@ -70,9 +71,7 @@ Intellisense c++ configuration의 compiler path가 맞는지 확인하자.
 
 tasks.json에서 command "cl.exe"를 실제 cl.exe의 path로 바꾸거나, 환경변수에 cl.exe path를 추가해보자.
 
-그래도 해결이 안 된다면(필자와 같은 경우)
-
-https://github.com/microsoft/vscode-cpptools/issues/3654
+그래도 해결이 안 된다면(필자와 같은 경우) [링크](https://github.com/microsoft/vscode-cpptools/issues/3654) 참고
 
     Dear People from the future looking to solve your issue: Here is what we have figured out so far:
 
