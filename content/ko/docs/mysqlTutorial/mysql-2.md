@@ -1,5 +1,5 @@
 ---
-title: "MySQL(2) : Tutorial"
+title: "(2) : Tutorial"
 date: date()
 #draft: true
 categories: [MySQL, DB]
@@ -7,7 +7,7 @@ tags: [mysql, db, tutorial]
 weight: 2
 ---
 
-[이전 포스트](https://lyra95.github.io/docs/database/mysql-1/)를 참고하여 mysql을 실행합니다.
+[이전 포스트](/docs/mysqltutorial/mysql-1/)를 참고하여 mysql을 실행합니다.<!--path dependencu-->
 
 [생활코딩](https://opentutorials.org/course/3161/19533)에서 MySQL의 전체적인 구조를 보고오면 이해에 도움이 될 것 입니다.
 
@@ -15,7 +15,7 @@ weight: 2
 
 현재 database 목록을 보기 위해 `SHOW DATABASES;` 커맨드를 입력합니다.
 
-```powershell
+```sql
 mysql> SHOW DATABASES;
 +--------------------+
 | Database           |
@@ -38,7 +38,7 @@ mysql>
 
 `CREATE DATABASE {database_name};` 커맨드를 입력해 database를 생성합니다.
 
-```powershell
+```sql
 mysql> CREATE DATABASE tutorial;
 Query OK, 1 row affected (0.01 sec)
 
@@ -65,7 +65,7 @@ tutorial이라는 이름의 database를 생성했습니다.
 
 `DROP DATABASE {database_name};` 커맨드를 입력해 database를 삭제할 수 있습니다.
 
-```powershell
+```sql
 mysql> DROP DATABASE tutorial;
 Query OK, 0 rows affected (0.01 sec)
 
@@ -89,7 +89,7 @@ tutorial database를 다시 생성합니다.
 
  `USE {database_name};` 커맨드를 입력하여 tutorial database로 접속할 수 있습니다.
 
-```powershell
+```sql
 mysql> CREATE DATABASE tutorial;
 Query OK, 1 row affected (0.01 sec)
 
@@ -97,4 +97,3 @@ mysql> USE tutorial;
 Database changed
 mysql>
 ```
-

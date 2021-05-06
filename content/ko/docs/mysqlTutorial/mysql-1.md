@@ -1,5 +1,5 @@
 ---
-title: "MySQL(1) : Install and Start Server"
+title: "(1) : Install and Start Server"
 date: date()
 #draft: true
 categories: [MySQL, DB]
@@ -28,7 +28,7 @@ cloud는 필요없으니 선택하지 않습니다.
 ## Start Server by GUI
 
 설치경로에 **manager-windows.exe** 파일을 클릭해서 실행합니다.
-![fig. 1](/images/mysql-1.png)
+![fig. 1](/images/mysql-1.png) <!--path dependencu-->
 
 Manage Servers 탭에서 MySQL Database를 클릭하고 Start를 클릭합니다. 초록색으로 점등이 되고 Running으로 Status가 바뀌면 서버가 켜진 것입니다.
 
