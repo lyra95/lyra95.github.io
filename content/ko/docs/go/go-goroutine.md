@@ -1,5 +1,5 @@
 ---
-title: "(3) : golang goRoutine"
+title: "(3)-1 : golang goRoutine"
 date: 2021-04-25T18:18:20+09:00
 categories: [Golang]
 tags: [golang, goroutine]
@@ -127,8 +127,8 @@ func main() {
 }
 ```
 
-이제 프로그램을 실행해보면 Hi from Go routine main 일관적으로 마지막에 출력됩니다.
- 
+이제 프로그램을 실행해보면 Hi from Go routine main이 마지막에 출력됩니다.
+
 ```powershell
 PS C:\dev\goproject\prime\test> ./test.exe
 Hi from new Go routine
