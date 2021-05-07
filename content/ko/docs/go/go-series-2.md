@@ -1,8 +1,8 @@
 ---
-title: "Go 문법(2) (draft)"
+title: "Golang 문법(2) (draft)"
 date: 2021-04-25T18:18:20+09:00
-categories: [Go]
-tags: [go, syntax]
+categories: [Golang]
+tags: [golang, syntax]
 weight : 2
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Go 문법(1)"
+title: "Golang 문법(1)"
 date: 2021-04-25T16:22:05+09:00
-categories: [Go]
-tags: [go, syntax]
+categories: [Golang]
+tags: [golang, syntax]
 draft: false
 weight: 1
 ---
