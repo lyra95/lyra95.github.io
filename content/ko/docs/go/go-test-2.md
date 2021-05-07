@@ -1,5 +1,5 @@
 ---
-title: "(1)-2 : golang 테스트"
+title: "(1)-2 : golang test"
 date: 2021-04-25T18:18:20+09:00
 categories: [Golang]
 tags: [golang, test, benchmark]
@@ -115,7 +115,7 @@ FAIL    prime   3.925s
 PS C:\dev\goproject\prime>
 ```
 
-쉘 출력문만 봐서는 의도적으로 실패하도록 작성한 TestFail이 실패하고 나머지 테스트들이 진행되었는지 알 수 없네요.
+쉘 출력문만 봐서는 나머지 테스트들이 진행되었는지 알 수 없네요.
 
 `go test -v`를 실행시켜 봅시다 (verbose의 v입니다.)
 
@@ -166,7 +166,7 @@ func TestPrime100(t *testing.T) {
 ```go
 func TestPrime100(t *testing.T) {
 	assert := assert.New(t)
-	assert.Equal(**0**, prime(100), "prime(100) should be **0**" )
+	assert.Equal(0, prime(100), "prime(100) should be 0" )
 }
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: "(1)-1 : golang 테스트"
+title: "(1)-1 : golang test"
 date: 2021-04-25T18:18:20+09:00
 categories: [Golang]
 tags: [golang, test, benchmark]
@@ -35,6 +35,8 @@ func TestPrime1(t *testing.T) {
 
 }
 ```
+
+ - Test{테스트이름}(t *testing.T) 형식을 지키면 됩니다. 테스트이름의 첫 글자는 **대문자**여야 합니다.
 
 이제 TestPrime1 함수 안에 테스트할 코드를 입력하면 됩니다.
 
@@ -116,6 +118,8 @@ func main() {
 }
 ```
 
+>효율성이 주된 논제가 아니므로, 가독성을 위해 에라토스테네스의 체 알고리즘은 사용하지 않았습니다.
+
 ## 테스트 실행
 
 `go test`로 테스트를 해봅시다.
@@ -128,3 +132,7 @@ PS C:\dev\goproject\prime>
 ```
 
 다음 포스트에서는 테스트 모듈에 대해 더 자세히 알아보겠습니다.
+
+## 더 읽어볼거리
+
+자연수를 다루다 보니 uint를 쓸까(unsigned) 고민했었는데 [링크](https://stackoverflow.com/questions/34165099/in-c-why-is-signed-int-faster-than-unsigned-int)를 참고해 보세요.

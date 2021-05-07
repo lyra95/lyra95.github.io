@@ -1,9 +1,9 @@
 ---
-title: "Golang 문법(1)"
+title: "Golang syntax(1)"
 date: 2021-04-25T16:22:05+09:00
 categories: [Golang]
 tags: [golang, syntax]
-draft: false
+draft: true
 weight: 1
 ---
 참고서적: Tucker의 Go 언어 프로그래밍
