@@ -1,6 +1,6 @@
 ---
 title: "(2) : Tutorial"
-date: date()
+date: 2021-05-07 00:00:00
 #draft: true
 categories: [MySQL, DB]
 tags: [mysql, db, tutorial]
