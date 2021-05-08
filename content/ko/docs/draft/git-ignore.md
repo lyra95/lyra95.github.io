@@ -4,7 +4,7 @@ date: 2021-05-07T22:45:57+09:00
 #draft: true
 categories: [Git]
 tags: [git]
-weight: 2
+weight: 1
 ---
 
 __pycahce__,ps1같은 파일을 깃헙에 올리고 싶지는 않을 것이다.

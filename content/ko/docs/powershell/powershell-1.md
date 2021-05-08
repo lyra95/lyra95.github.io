@@ -4,7 +4,7 @@ date: 2021-05-08T15:04:14+09:00
 #draft: true
 categories: [powershell]
 tags: [powershell,ps1]
-weight: 3
+weight: 2
 ---
 
 블로그 포스팅을 할 때 `hugo new {path}/{namd}.md` 같은 식으로 .md파일을 생성하는데, path가 점점 길어지다 보니 타이핑이 귀찮아져서 .ps1파일을 하나 생성했다.
