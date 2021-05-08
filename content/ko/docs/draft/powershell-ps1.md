@@ -2,8 +2,8 @@
 title: "ps1 파일로 powershell command 한 번에 실행하기"
 date: 2021-05-07T22:27:05+09:00
 #draft: true
-categories: []
-tags: []
+categories: [Powershell]
+tags: [powershell, ps1]
 weight: 1
 ---
 

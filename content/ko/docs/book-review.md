@@ -35,6 +35,10 @@ weight: 1000
 
     C++ 크리에이터가 쓴 C++책. 프로그래밍 입문생에게 추천하고 싶다. 단순 이론말고도 저자 본인의 경험에서 우러나오는 충고들이 보석 같다. 책이 너무 두껍다.
 
+5. [Rust Doc](https://doc.rust-lang.org/beta/book/index.html) (**8/10**)
+
+    Rust를 쉽게 배우는 법: C++을 배우고 고구마 100개 먹은 기분으로 rust doc을 본다. [한글번역](https://rinthel.github.io/rust-lang-book-ko/)
+
 ## Network, Server
 
 1. [게임 서버 프로그래밍 교과서](http://www.yes24.com/Product/Goods/71768958?OzSrank=1) **(8/10)**

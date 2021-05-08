@@ -1,5 +1,5 @@
 ---
-title: "(3)-2 : goRoutine으로 prime 개선"
+title: "(3)-2 : goRoutine으로 prime 개선 (draft)"
 date: 2021-05-07T22:56:19+09:00
 #draft: true
 categories: [Golang]
