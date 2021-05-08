@@ -38,3 +38,5 @@
   </footer>
 </div>
 {{ end }}
+
+{{ if $.Param "mathjax" }}{{ partial "mathjax_support.html" . }}{{ end }}
