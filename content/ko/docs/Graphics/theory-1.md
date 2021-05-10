@@ -1,5 +1,5 @@
 ---
-title: "Theory (1) : 단어 정리"
+title: "Theory (1) : 용어 정리 (draft)"
 date: 2021-05-08T15:33:28+09:00
 #draft: true
 categories: [Graphics]

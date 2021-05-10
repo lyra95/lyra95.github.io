@@ -2,9 +2,9 @@
 title: "Hugo Mathjax Setting"
 date: 2021-05-08T17:57:04+09:00
 #draft: true
-categories: []
-tags: []
-weight: 1
+categories: [Blogging]
+tags: [math, blog, setting]
+weight: 4
 ---
 
 Hugo에 수식을 쓰고 싶으면 mathjax 플러그인을 쓰면된다. 

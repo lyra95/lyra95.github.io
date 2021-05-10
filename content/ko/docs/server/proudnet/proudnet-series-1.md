@@ -4,6 +4,7 @@ date: 2021-04-26T18:17:59+09:00
 categories: [Game Server, ProudNet]
 tags: [network, server, game, proudnet]
 draft: false
+weight: 1
 ---
 
 ## Reference
