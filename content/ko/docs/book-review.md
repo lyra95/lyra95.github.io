@@ -81,3 +81,9 @@ weight: 1000
 1. [Deep Learning with PyTorch](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiol7T597fwAhWbxIsBHR6lCxIQFjAAegQIBBAD&url=https%3A%2F%2Fpytorch.org%2Fassets%2Fdeep-learning%2FDeep-Learning-with-PyTorch.pdf&usg=AOvVaw2yUdDoHS2F0LQYGQdxD-1P) **(10/10)**
 
     pytorch 공식 가이드북. 하도 AI거리니까 나도 알아는 봐야겠는데 쓸데없는 정보의 홍수 속에서 발견한 보물. 셋팅, 이론, 예제 삼박자가 완벽
+
+## 기타 url
+
+[딥러닝을 이용한 자연어 처리 입문](https://wikidocs.net/book/2155)
+[pytorch로 시작하는 딥러닝 입문](https://wikidocs.net/book/2788)
+[pytorch docs](https://pytorch.org/docs/stable/index.html)
