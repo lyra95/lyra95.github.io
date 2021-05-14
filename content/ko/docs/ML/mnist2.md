@@ -272,7 +272,7 @@ input_image = torch.zeros((1,1,28,28)).to(device)
 onnx.export(model, input_image, 'model.onnx')
 ```
 
->로드하는 법은 [onnx 튜토리얼 참고](https://github.com/onnx/tutorials)
+>[onnx 튜토리얼 참고](https://github.com/onnx/tutorials)
 
 ## 마치며
 
