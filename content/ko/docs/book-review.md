@@ -87,3 +87,6 @@ weight: 1000
 [딥러닝을 이용한 자연어 처리 입문](https://wikidocs.net/book/2155)
 [pytorch로 시작하는 딥러닝 입문](https://wikidocs.net/book/2788)
 [pytorch docs](https://pytorch.org/docs/stable/index.html)
+[pytorch lightning bolt docs](https://lightning-bolts.readthedocs.io/en/latest/)
+[pytorch lightning docs](https://pytorch-lightning.readthedocs.io/en/latest/)
+[점프 투 파이썬](https://wikidocs.net/book/1)
