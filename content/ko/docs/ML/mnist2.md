@@ -1,5 +1,5 @@
 ---
-title: "Pytorch tutorial (2)"
+title: "Network, Save & Load : Pytorch tutorial (2)"
 date: 2021-05-11T14:51:01+09:00
 categories: [MNIST, pytorch]
 tags: [pytorch, mnist]
