@@ -47,6 +47,6 @@ PS C:\dev\goproject\prime>
 먼저 os와 아키텍처, cpu에 대한 정보가 나옵니다.
 
 `BenchmarkPrime-12          29833             40675 ns/op`의 의미는 `BenchmarkPrime()` 함수가 29833번 반복되었으며, 한 번 시행마다 40675ns 만큼 걸렸다는 뜻입니다.
->BenchmarkPrime-12에서 12의 의미는 뭘까요?
+>BenchmarkPrime-12에서 12의 의미는 cpu가 가질 수 있는 최대 쓰레드 수 입니다. 즉, 이 컴퓨터에서는 한 순간에 최대 12개의 고루틴들이 병렬로 실행될 수 있습니다.
 
 고루틴을 이용한 멀티쓰레딩 프로그래밍으로 `prime()` 함수를 조금 개선해 봅시다.
