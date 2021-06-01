@@ -4,4 +4,5 @@ title: "hugo tutorial (draft)"
 categories: [blogging]
 tags: [hugo, blog]
 weight: 2
+draft: true
 ---

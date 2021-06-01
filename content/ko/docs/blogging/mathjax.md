@@ -43,7 +43,7 @@ Hugo에 수식을 쓰고 싶으면 mathjax 플러그인을 쓰면된다.
 
 필자는 math라는 디렉토리를 `layouts/partials`밑에 생성해서, `{생략}/layouts/partials/math/mathjax_support.html` 라는 경로가 되었다. (파일이름을 포함한 경로만 기억하면 본인 마음대로 해도 된다. `mathjax_load.html`로 하든 말든)
 
-## `footer.html`에 line추가하기
+## footer.html에 line추가하기
 
 여기서 살짝 편법을 쓴다.
 
