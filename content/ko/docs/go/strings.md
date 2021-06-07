@@ -17,3 +17,9 @@ weight: 100
 `func Split(s, sep string) []string`
 `func Replace(s, old, new string, n int) string` (n개의 old를 new로 치환한 카피 리턴)
 `func ToUpper(s string) string`
+`func TrimRight(s string, cutset string) (string)`
+
+```go
+fmt.Print(strings.TrimRight("¡¡¡Hello, Gophers!!!", "!¡"))
+// ¡¡¡Hello, Gophers
+```
