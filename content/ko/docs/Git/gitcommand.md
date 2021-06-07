@@ -35,3 +35,10 @@ git diff
 
 마지막 버전으로 돌아가기
 git reset --hard
+
+특정 버전으로 이동(commit ID는 git log로 볼 수 있음)
+git checkout {commit ID}
+git checkout {branch name}
+
+텍스트 에디터 바꾸기
+git config --global core.editor "vim"
