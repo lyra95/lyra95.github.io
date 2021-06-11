@@ -40,5 +40,12 @@ git reset --hard
 git checkout {commit ID}
 git checkout {branch name}
 
+특정 버전으로 리셋(그 버전 이후 버전들 삭제됨)
+git reset --hard {commit ID}
+
+특정 버전으로 revert(commit ID 직전 버전으로 시점이 이동하고, commit을 새로 생성함)
+git revert {commit ID}
+(What is the meaning of revert this commit and roll back this commit in GitHub for Windows?)[https://stackoverflow.com/questions/15039271/what-is-the-meaning-of-revert-this-commit-and-roll-back-this-commit-in-github-fo]
+
 텍스트 에디터 바꾸기
 git config --global core.editor "vim"

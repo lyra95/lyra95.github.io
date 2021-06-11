@@ -62,7 +62,7 @@ tasks.json
 ```
 
 Intellisense c++ configuration(UI)
-
+<!--path dependency-->
 ![fig. 1.](/images/cl-exe-setting-fig-1.png)
 
 ## Solution
