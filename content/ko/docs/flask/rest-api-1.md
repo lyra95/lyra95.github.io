@@ -1,5 +1,5 @@
 ---
-title: "Flask로 Restful Api (1)"
+title: "Flask로 Restful Api (1): 기본 API"
 date: 2021-06-11T18:31:49+09:00
 #draft: true
 categories: [rest api, flask, python]
@@ -176,6 +176,8 @@ PS C:\dev\flask-rest-api-tuto> python test.py
 ```
 
 ## 다음 포스트에서는
+
+클라이언트의 리퀘스트를 reqparse 패키지를 활용해 파싱하는 법을 설명할 것이다. 이를 이용해 put 요청을 구현할 수 있다.
 
 flask_caching 패키지를 활용해서 캐시 기능을 구현할 것이다. `get https://서버주소/videos/1`가 여러번 요청되었을 때, 해당 데이터가 업데이트/삭제되지 않았다면, 캐시를 활용해 예전에 계산된 결과를 반환하게 함으로써 서버의 부하를 줄이고 송수신 시간을 단축할 수 있다.
 
