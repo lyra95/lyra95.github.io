@@ -27,13 +27,13 @@ weight: 1000
     책 구성이 별로여서 잘 읽히지 않음. 번역체 심함.
     [여기](https://refactoring.guru/design-patterns/)에서 원문으로 공부하는게 더 나을 듯.
 
-3. Effective Modern C++, Scott Meyers **(10/10)**
+3. Effective Modern C++, Scott Meyers **(8/10)**
    
-   c++을 근사하게(그리고 모-던하게) 쓰고 싶으면 꼭 읽어야할 책.
+   c++을 근사하게(그리고 모-던하게) 쓰고 싶으면 꼭 읽어야할 책. 다만 C++은 슬슬 놓아줘야할 언어인게 아닐까?
 
-4. Programming Principles and Practice Using C++, Bjarne Stroustrup **(10/10)**
+4. Programming Principles and Practice Using C++, Bjarne Stroustrup **(8/10)**
 
-    C++ 크리에이터가 쓴 C++책. 프로그래밍 입문생에게 추천하고 싶다. 단순 이론말고도 저자 본인의 경험에서 우러나오는 충고들이 보석 같다. 책이 너무 두껍다.
+    C++ 크리에이터가 쓴 C++책. 프로그래밍 입문생에게 추천하고 싶다. 단순 이론말고도 저자 본인의 경험에서 우러나오는 충고들이 보석 같다. 책이 너무 두껍다. C++이라서 2점 깎음
 
 5. [Rust Doc](https://doc.rust-lang.org/beta/book/index.html) (**8/10**)
 
@@ -42,8 +42,7 @@ weight: 1000
 ## Network, Server
 
 1. [게임 서버 프로그래밍 교과서](http://www.yes24.com/Product/Goods/71768958?OzSrank=1) **(8/10)**
-
-    이론적인 부분은 만점을 주고 싶다. 하지만 실습부분이 많이 부족하다. (대부분 프라우드넷 엔진을 사용한다.)
+    옛날에는 이렇게 일일이 손으로 다 했데요~ 하는 전래동화 읽는 마음으로 보는 책
 
 2. [유니티 네트워크 프로그래밍](http://www.yes24.com/Product/Goods/19517322) (반다이 남코 현역 프로그래머가 알려주는) **(6/10)**
 
