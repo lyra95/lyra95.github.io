@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>help on ZDoc</title>
+    <link>https://lyra95.github.io/tags/help/</link>
+    <description>Recent content in help on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 01 Jun 2021 01:09:46 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/help/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Help 메시지 출력하게 하기</title>
+        <link>https://lyra95.github.io/docs/powershell/help/</link>
+        <pubDate>Tue, 01 Jun 2021 01:09:46 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/powershell/help/</guid>
+        <description>param([switch] $help )를 이용해서 if-else로 처리한다.
+1 2 3 4 5 6 7 8 9 10 11 12  param([switch] $help ) if ($help) { Write-Host &amp;#34;create new md file:&amp;#34; write-host &amp;#34;./post {category} {name}&amp;#34; } else { $folder=$args[0] $name=$args[1] $path=&amp;#39;content/ko/docs/&amp;#39; hugo new $path$folder/$name.md }   -h 나 -help flag를 주면된다.
+1 2 3 4  PS C:\dev\blog&amp;gt; ./post -h create new md file: ./post {category} {name}   </description>
+      </item>
+      
+    
+  </channel>
+</rss>

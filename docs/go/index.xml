@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on ZDoc</title>
+    <link>https://lyra95.github.io/docs/go/</link>
+    <description>Recent content in Golang on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 28 Jan 2020 00:34:39 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/docs/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>(1)-1 : golang test</title>
+        <link>https://lyra95.github.io/docs/go/go-test-1/</link>
+        <pubDate>Sun, 25 Apr 2021 18:18:20 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/go-test-1/</guid>
+        <description>Golang는 쉽고 간편한 테스트와 벤치마크를 제공합니다. 이 항목에서는 간단하게 소수판별 프로그램을 작성하며 golang의 테스트와 벤치마크를 사용해봅시다.
+TDD(Test-Driven-Deleopment, 테스트 주도 개발) 절차에 따라 코드를 작성해 봅시다.
+모듈 생성 프로젝트 디렉토리에서 터미널을 열고, go mod init {module 이름}을 입력합니다. 모듈이름은 prime으로 하겠습니다.
+1 2  PS C:\dev\goproject\prime&amp;gt; go mod init prime go: creating new go.mod: module prime   go.mod 파일이 생성되었습니다.
+test go 파일 생성/작성 test를 위한 go 파일은 이름이 _test.go로 끝나야 합니다.</description>
+      </item>
+      
+      <item>
+        <title>(1)-2 : golang test</title>
+        <link>https://lyra95.github.io/docs/go/go-test-2/</link>
+        <pubDate>Sun, 25 Apr 2021 18:18:20 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/go-test-2/</guid>
+        <description>테스트 여러개 생성 그냥 Test 함수를 여러개 작성하면 됩니다.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  // prime_test.go func TestPrimeZero(t *testing.T) { result := prime(0) if result != 0 { t.Errorf(&amp;#34;prime(0) should be 0 but prime(0) returns %d&amp;#34;, result) } } func TestPrimeNegative(t *testing.T) { result := prime(-100) if result !</description>
+      </item>
+      
+      <item>
+        <title>(2) : golang benchmark</title>
+        <link>https://lyra95.github.io/docs/go/go-benchmark/</link>
+        <pubDate>Sun, 25 Apr 2021 18:18:20 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/go-benchmark/</guid>
+        <description>Golang은 벤치마크 기능을 지원합니다. 테스트와 마찬가지로
+   _test.go로 끝나는 파일에    testing 패키지를 임포트하고    func BenchmarkXxxx(b *testing.B) 형태로 함수를 작성하면 됩니다.    한 번 작성해 봅시다. (소스코드는 이전 포스트의 n이하의 소수의 개수를 리턴하는 함수 prime(n)를 참고하세요.)
+1 2 3 4 5 6 7 8 9 10  // prime_test.go package main import &amp;#34;testing&amp;#34; func BenchmarkPrime(b *testing.B) { for i := 0; i &amp;lt; b.</description>
+      </item>
+      
+      <item>
+        <title>(3)-1 : golang goRoutine</title>
+        <link>https://lyra95.github.io/docs/go/go-goroutine/</link>
+        <pubDate>Sun, 25 Apr 2021 18:18:20 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/go-goroutine/</guid>
+        <description>시작하기 전에 스레드, 프로세스, 컨텍스트 스위칭에대한 개념을 알고 있으면 도움이 됩니다. 몰라도 당장에는 대략적으로 이해할 수는 있겠지만 이번 기회에 알아두는 것도 좋습니다.
+go Routine func foo()라는 함수가 있다고 합시다.
+go foo()로 고루틴(스레드)를 생성함과 동시에 생성된 고루틴에서 foo() 함수가 수행됩니다.
+1 2 3 4 5 6 7 8 9 10  func foo() { fmt.Print(&amp;#34;Hi from new Go routine&amp;#34;) } func main() { go foo() go foo() go foo() fmt.Println(&amp;#34;Hi from Go routine main&amp;#34;) }    main 함수도 고루틴의 일종입니다.</description>
+      </item>
+      
+      <item>
+        <title>(3)-2 : goRoutine으로 prime 개선 (draft)</title>
+        <link>https://lyra95.github.io/docs/go/go-goroutine2/</link>
+        <pubDate>Fri, 07 May 2021 22:56:19 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/go-goroutine2/</guid>
+        <description>이제 goRoutine을 활용해봅니다. 다음 두 함수를 prime.go에 추가합니다.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  // prime.go func prime_(start, end int, handle *int, wg *sync.WaitGroup) { cnt := 0 for i := start; i &amp;lt;= end; i++ { if isPrime(i) { cnt++ } } defer wg.Done() *handle = cnt } func prime_multi(n int) int { mid := n / 2 var wg sync.</description>
+      </item>
+      
+      <item>
+        <title>Chat Server Client With Golang (draft)</title>
+        <link>https://lyra95.github.io/docs/go/chat-server-client-with-golang/</link>
+        <pubDate>Mon, 07 Jun 2021 15:57:24 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/chat-server-client-with-golang/</guid>
+        <description>(https://github.com/lyra95/chat-server-client-with-golang/tree/master)[https://github.com/lyra95/chat-server-client-with-golang/tree/master]
+(진행중)</description>
+      </item>
+      
+      <item>
+        <title>Deleting Key in Map While Ranging Is Safe</title>
+        <link>https://lyra95.github.io/docs/go/deleting-key-while-ranging-is-safe/</link>
+        <pubDate>Mon, 07 Jun 2021 15:49:24 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/deleting-key-while-ranging-is-safe/</guid>
+        <description>Is it safe to remove selected keys from map within a range loop?
+delete(map,key)가 실제로 delete를 행하는게 아니라 그냥 flag를 setting할 뿐이라고 한다. 그래서 다음과 같은 코드를 작성해도 괜찮다.
+1 2 3 4  for key, value := range table { fmt.Printf(&amp;#34;deleting %v=&amp;gt;%v\n&amp;#34;, key, value.value) delete(table, key) }   </description>
+      </item>
+      
+      <item>
+        <title>filepath.Walk로 디렉토리 순회하기</title>
+        <link>https://lyra95.github.io/docs/go/walk/</link>
+        <pubDate>Tue, 01 Jun 2021 03:24:18 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/walk/</guid>
+        <description>https://pkg.go.dev/path/filepath#Walk
+1 2 3 4 5 6 7  // func Walk(root string, fn WalkFunc) error err := filepath.Walk(root, // type WalkFunc func(path string, info fs.FileInfo, err error) error  func(path string, info fs.FileInfo, err error) error { // do what you want to do with each file/directory, including root  } )   </description>
+      </item>
+      
+      <item>
+        <title>strings 패키지</title>
+        <link>https://lyra95.github.io/docs/go/strings/</link>
+        <pubDate>Tue, 01 Jun 2021 03:16:24 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/strings/</guid>
+        <description>https://golang.org/pkg/strings/
+스트링 관련 많은 함수들을 제공한다. 몇가지 예를 들면
+func Contains(s, substr string) bool
+func HasSuffix(s, suffix string) bool
+func Index(s, substr string) int (첫번째 index)
+func Split(s, sep string) []string
+func Replace(s, old, new string, n int) string (n개의 old를 new로 치환한 카피 리턴)
+func ToUpper(s string) string
+func TrimRight(s string, cutset string) (string)
+1 2  fmt.Print(strings.TrimRight(&amp;#34;¡¡¡Hello, Gophers!!!&amp;#34;, &amp;#34;!¡&amp;#34;)) // ¡¡¡Hello, Gophers   </description>
+      </item>
+      
+      <item>
+        <title>디렉토리 유무확인/생성하기</title>
+        <link>https://lyra95.github.io/docs/go/mkdir/</link>
+        <pubDate>Tue, 01 Jun 2021 03:06:09 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/mkdir/</guid>
+        <description>1 2 3 4 5  // 이미 있는지 확인 if _, err := os.Stat(path); os.IsNotExist(err) { // 없으므로 생성 	e := os.Mkdir(path, os.ModeDir) }   </description>
+      </item>
+      
+      <item>
+        <title>Print하지 않고 Format String 쓰기</title>
+        <link>https://lyra95.github.io/docs/go/format-string/</link>
+        <pubDate>Tue, 01 Jun 2021 03:03:04 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/format-string/</guid>
+        <description>fmt.SprintF(s string, a ...interface{}) string로 가능
+1 2  var tmp string tmp = fmt.Sprintf(&amp;#34;// Date : %v %v %v\n&amp;#34;, year, month, day)   </description>
+      </item>
+      
+      <item>
+        <title>file read write 하는 법</title>
+        <link>https://lyra95.github.io/docs/go/file_read_write.md/</link>
+        <pubDate>Tue, 01 Jun 2021 01:37:10 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/file_read_write.md/</guid>
+        <description>방법이 너무 다양해서 하나 통일해서 정할 필요가 있어보인다.
+READ  os.ReadFile(path string) ([]byte, error) os.Open(path string) (*os.File , error)로 file handle을 정의해서file.Read(buffer []byte) (int n, error)를 사용하는 방법 file handle로 bufio.NewReader(file io.Reader) *bufio.Scanner를 정의해서 .Read/.ReadByte/.ReadBytes/.ReadLine/.ReadRune/.ReadString/.ReadSlice를 사용하는 방법 file handle로 bufio.NewReader(file io.Reader) *bufio.Scanner를 정의해서 .Scan(),.Split() 과 .Text()를 사용하는 방법   https://pkg.go.dev/bufio#Scanner example 참고
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  // 1 // 파일을 열어서 내용물 전체를 []byte로 받는다.</description>
+      </item>
+      
+      <item>
+        <title>String &lt;-&gt; Int 변환하기</title>
+        <link>https://lyra95.github.io/docs/go/strconv/</link>
+        <pubDate>Tue, 01 Jun 2021 01:31:21 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/strconv/</guid>
+        <description>strconv 패키지에 string, int를 변환하는 함수들이 있다.
+strconv.Atoi(s string) (int,erorr)로 string-&amp;gt;int
+strconv.ItoA(n int) string로 int-&amp;gt;string</description>
+      </item>
+      
+      <item>
+        <title>Input Buffer Flush하기</title>
+        <link>https://lyra95.github.io/docs/go/flush/</link>
+        <pubDate>Tue, 01 Jun 2021 01:25:48 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/flush/</guid>
+        <description>Scan을 할 때, 인풋 버퍼를 비우지 않으면 엉뚱한 값을 입력 받을 수 있으니 인풋 버퍼를 비우는게 좋다.
+비우는 방법:
+1 2 3 4 5 6  import ( &amp;#34;os&amp;#34; &amp;#34;bufio&amp;#34; ) stdin := bufio.NewReader(os.Stdin) stdin.ReadString(&amp;#39;\n&amp;#39;) // &amp;#39;\n&amp;#39;이 나올때까지 버퍼를 읽는다.   </description>
+      </item>
+      
+    
+  </channel>
+</rss>

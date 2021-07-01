@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorial on ZDoc</title>
+    <link>https://lyra95.github.io/tags/tutorial/</link>
+    <description>Recent content in tutorial on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>(2) : Tutorial</title>
+        <link>https://lyra95.github.io/docs/mysqltutorial/mysql-2/</link>
+        <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/mysqltutorial/mysql-2/</guid>
+        <description>이전 포스트를 참고하여 mysql을 실행합니다.생활코딩에서 MySQL의 전체적인 구조를 보고오면 이해에 도움이 될 것 입니다.
+Database 목록 보기 현재 database 목록을 보기 위해 SHOW DATABASES; 커맨드를 입력합니다.
+1 2 3 4 5 6 7 8 9 10 11 12  mysql&amp;gt;SHOWDATABASES;+--------------------+ |Database|+--------------------+ |information_schema||mysql||performance_schema||sys|+--------------------+ 4rowsinset(0.01sec)mysql&amp;gt;    mysql 명령문은 case sensetive하지 않습니다. show databases;를 입력하더라도 같은 결과를 보여줄 것입니다. 하지만 convention에 따라, 사용자가 지정한 이름은 소문자로, 그외는 대문자로 써서 알아보기 편하게 합시다.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

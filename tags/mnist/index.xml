@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mnist on ZDoc</title>
+    <link>https://lyra95.github.io/tags/mnist/</link>
+    <description>Recent content in mnist on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 11 May 2021 14:51:01 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/mnist/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Loading MNIST data : Pytorch tutorial (1)</title>
+        <link>https://lyra95.github.io/docs/ml/mnist/</link>
+        <pubDate>Tue, 11 May 2021 14:51:01 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/ml/mnist/</guid>
+        <description>pytorch 튜토리얼 코스를 참고했다.
+전체 코드 링크를 새탭에서 열고 ctr+s해서 저장가능.
+주피터 노트북 파일(.ipynb)
+device 선택 gpu/cpu 먼저 cpu와 gpu중 device를 선택한다. gpu가 있고 cuda가 설치되어 있으면 cuda를 사용하고, 아니면 cpu를 사용한다.
+1 2 3  import torch device = &amp;#39;cuda&amp;#39; if torch.cuda.is_available() else &amp;#39;cpu&amp;#39; #print(&amp;#39;Using {} device&amp;#39;.format(device)) 로 device 확인가능   MNIST 데이터 가져오기 본디 MNIST는 28*28 사이즈의 흑백으로된 0~9 숫자 손글씨 이미지 데이터다. 근데 지금와서는 일종의 프로토콜처럼 사용되고 있다.</description>
+      </item>
+      
+      <item>
+        <title>Network, Save &amp; Load : Pytorch tutorial (2)</title>
+        <link>https://lyra95.github.io/docs/ml/mnist2/</link>
+        <pubDate>Tue, 11 May 2021 14:51:01 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/ml/mnist2/</guid>
+        <description>저번 포스트에서 이어서&amp;hellip;
+이미지 데이터 한 개는(레이블 제외) 1*28*28 사이즈를 갖는다.
+batch_size=64이므로 한 번에 64*1*28*28 사이즈의 텐서가 모델에 들어간다.
+Network Architecture 설정하기 nn.Module을 상속받는 클래스를 생성하고, __init__, __foward__를 구현해서 모델 아키텍쳐를 설정할 수 있다.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  from torch import nn class NeuralNetwork(nn.Module): def __init__(self): super(NeuralNetwork, self).__init__() self.flatten = nn.Flatten() self.linear_relu_stack = nn.Sequential( nn.Linear(28*28, 512), nn.</description>
+      </item>
+      
+      <item>
+        <title>Migration to Pytorch Lightning : Pytorch tutorial (3)</title>
+        <link>https://lyra95.github.io/docs/ml/mnist3/</link>
+        <pubDate>Tue, 11 May 2021 14:51:01 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/ml/mnist3/</guid>
+        <description>Lightning in 2 steps 참고.
+Migration할 코드 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82  import torch device = &amp;#39;cuda&amp;#39; if torch.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

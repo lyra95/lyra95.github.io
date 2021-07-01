@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ML on ZDoc</title>
+    <link>https://lyra95.github.io/categories/ml/</link>
+    <description>Recent content in ML on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 10 May 2021 16:45:27 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/categories/ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Pytorch Install (local)</title>
+        <link>https://lyra95.github.io/docs/ml/install-local/</link>
+        <pubDate>Mon, 10 May 2021 16:45:27 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/ml/install-local/</guid>
+        <description>가이드대로 차근차근 따라한다. (Windows 10 64bits)
+Prerequisites   python 3.xx가 설치 되었는가?
+터미널에서 python으로 버젼 확인 가능
+  pip3가 설치되었는가?
+터미널에서 pip3를 실행해서 확인
+  CUDA가 설치되었는가?
+ CUDA가 지원되는 GPU인가? CUDA ver. 10.x or 11.x?    Install 가이드 링크 상단 참조
+Check pytorch 설치 확인
+1 2 3 4 5 6 7 8 9 10 11  PS C:\Windows\system32&amp;gt; python Python 3.9.4 (tags/v3.9.4:1f2e308, Apr 6 2021, 13:40:21) [MSC v.</description>
+      </item>
+      
+      <item>
+        <title>Pytorch Install (Cloud) (draft)</title>
+        <link>https://lyra95.github.io/docs/ml/install-cloud.md/</link>
+        <pubDate>Mon, 10 May 2021 16:45:27 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/ml/install-cloud.md/</guid>
+        <description>AWS의 GPU instance 가격정책이 너무 비싼듯하여 google cloud를 시도하는데, (aws: 아무튼 비쌈/google: t4 tesla 0.35usd/hour)
+seoul region에는 gpu instace 서비스가 안되고 iowa region을 골랐더니 instance 이니셜라이제이션이 안되고 있다&amp;hellip;
+좀 더 알아본 후 상세히 포스팅하겠음.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>join on ZDoc</title>
+    <link>https://lyra95.github.io/tags/join/</link>
+    <description>Recent content in join on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/join/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>(6) : JOIN, 데이터 중복 최소화</title>
+        <link>https://lyra95.github.io/docs/mysqltutorial/mysql-6/</link>
+        <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/mysqltutorial/mysql-6/</guid>
+        <description>데이터 중복 문제 다음과 같이 topic table이 있습니다.
+1 2 3 4 5 6 7 8 9 10 11  mysql&amp;gt;select*fromtopic;+----+------------+--------------------+---------------------+--------+--------------------------+ |id|title|description|created|author|profile|+----+------------+--------------------+---------------------+--------+--------------------------+ |1|MySQL|MySQLis...|2018-01-1000:00:00|egoing|developer||2|ORACLE|Oracleis...|2021-05-0618:17:04|egoing|developer||3|SQLServer|SQLServeris...|2021-05-0620:20:24|duru|databaseadministrator||4|PostgreSQL|PostgreSQLis...|2021-05-0618:27:24|taeho|datascientist,developer||5|MongoDB|MongoDBis...|2021-05-0618:27:43|egoing|developer|+----+------------+--------------------+---------------------+--------+--------------------------+ 5rowsinset(0.00sec)  (author,profile)을 보면 (&amp;lsquo;egoing&amp;rsquo;,&amp;lsquo;developer&amp;rsquo;)가 전체 5개 레코드 중 3개의 레코드에서 반복되고 있습니다.
+만일 테이블이 훨씬 더 큰 사이즈여서 몇 만, 십 만 단위의 레코드가 있었더라면 저렇게 특정한 데이터들이 반복되지 않는게 좋습니다. 데이터의 크기가 몇 기가바이트 단위로 커도 역시 반복되지 않는게 좋습니다.
+테이블에 반복되는 데이터가 있으면 어떻게 해야할까요?</description>
+      </item>
+      
+    
+  </channel>
+</rss>

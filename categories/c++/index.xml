@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c&#43;&#43; on ZDoc</title>
+    <link>https://lyra95.github.io/categories/c&#43;&#43;/</link>
+    <description>Recent content in c&#43;&#43; on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 28 Apr 2021 16:29:19 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/categories/c++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Effective Modern C&#43;&#43;(1)</title>
+        <link>https://lyra95.github.io/docs/cpp/effective-cpp/</link>
+        <pubDate>Wed, 28 Apr 2021 16:29:19 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/cpp/effective-cpp/</guid>
+        <description>Item4: Deduced type 확인하기 A. 에디터에 마우스 갖다대면 뜸 B. 컴파일러로 확인하기 다음과 같이 Declaration만 있고 Definition은 없는 class를 정의하자.
+1 2 3 4 5 6 7 8  template&amp;lt;typename T&amp;gt; // declaration only for TD; class TD; // TD == &amp;#34;Type Displayer&amp;#34;  int x; const int *y; // x랑 y의 type을 알고 싶다면... TD&amp;lt;decltype(x)&amp;gt; xType; // elicit errors containing TD&amp;lt;decltype(y)&amp;gt; yType; // x&amp;#39;s and y&amp;#39;s types   컴파일하면 컴파일러가 에러메세지로 deduced type을 알려준다.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

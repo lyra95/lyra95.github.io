@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>filepath on ZDoc</title>
+    <link>https://lyra95.github.io/tags/filepath/</link>
+    <description>Recent content in filepath on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 01 Jun 2021 03:24:18 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/filepath/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>filepath.Walk로 디렉토리 순회하기</title>
+        <link>https://lyra95.github.io/docs/go/walk/</link>
+        <pubDate>Tue, 01 Jun 2021 03:24:18 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/walk/</guid>
+        <description>https://pkg.go.dev/path/filepath#Walk
+1 2 3 4 5 6 7  // func Walk(root string, fn WalkFunc) error err := filepath.Walk(root, // type WalkFunc func(path string, info fs.FileInfo, err error) error  func(path string, info fs.FileInfo, err error) error { // do what you want to do with each file/directory, including root  } )   </description>
+      </item>
+      
+    
+  </channel>
+</rss>

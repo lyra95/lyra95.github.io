@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on ZDoc</title>
+    <link>https://lyra95.github.io/categories/ssh/</link>
+    <description>Recent content in ssh on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 10 May 2021 19:36:40 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>vs code remote:ssh로 ec2 접속</title>
+        <link>https://lyra95.github.io/docs/aws/ec2-3/</link>
+        <pubDate>Mon, 10 May 2021 19:36:40 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/aws/ec2-3/</guid>
+        <description>먼저 vscode에서 remote - ssh 애드온을 설치한다.
+왼쪽 탭에 remote explore라고 새로운 탭이 생긴다. ssh targets에 아직 아무것도 없다.
+톱니바퀴를 눌러서 config파일을 눌러서 다음과 같이 내용을 수정했다.
+1 2 3 4 5  # Read more about SSH config files: https://linux.die.net/man/5/ssh_config Host {아무거나 display할 이름} HostName {ec2 인스턴스의 dns나 ipv4} User ec2-user IdentityFile {key pair pem 파일 경로}   error: The process tried to write to a nonexistent pipe config 파일 경로가 c:\users\{유저이름}\.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

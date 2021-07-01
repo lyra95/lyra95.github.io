@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>goroutine on ZDoc</title>
+    <link>https://lyra95.github.io/tags/goroutine/</link>
+    <description>Recent content in goroutine on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 07 May 2021 22:56:19 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/goroutine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>(3)-1 : golang goRoutine</title>
+        <link>https://lyra95.github.io/docs/go/go-goroutine/</link>
+        <pubDate>Sun, 25 Apr 2021 18:18:20 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/go-goroutine/</guid>
+        <description>시작하기 전에 스레드, 프로세스, 컨텍스트 스위칭에대한 개념을 알고 있으면 도움이 됩니다. 몰라도 당장에는 대략적으로 이해할 수는 있겠지만 이번 기회에 알아두는 것도 좋습니다.
+go Routine func foo()라는 함수가 있다고 합시다.
+go foo()로 고루틴(스레드)를 생성함과 동시에 생성된 고루틴에서 foo() 함수가 수행됩니다.
+1 2 3 4 5 6 7 8 9 10  func foo() { fmt.Print(&amp;#34;Hi from new Go routine&amp;#34;) } func main() { go foo() go foo() go foo() fmt.Println(&amp;#34;Hi from Go routine main&amp;#34;) }    main 함수도 고루틴의 일종입니다.</description>
+      </item>
+      
+      <item>
+        <title>(3)-2 : goRoutine으로 prime 개선 (draft)</title>
+        <link>https://lyra95.github.io/docs/go/go-goroutine2/</link>
+        <pubDate>Fri, 07 May 2021 22:56:19 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/go-goroutine2/</guid>
+        <description>이제 goRoutine을 활용해봅니다. 다음 두 함수를 prime.go에 추가합니다.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  // prime.go func prime_(start, end int, handle *int, wg *sync.WaitGroup) { cnt := 0 for i := start; i &amp;lt;= end; i++ { if isPrime(i) { cnt++ } } defer wg.Done() *handle = cnt } func prime_multi(n int) int { mid := n / 2 var wg sync.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

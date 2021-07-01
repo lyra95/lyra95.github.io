@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws on ZDoc</title>
+    <link>https://lyra95.github.io/tags/aws/</link>
+    <description>Recent content in aws on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 10 May 2021 19:36:40 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>aws EC2 server instance 생성</title>
+        <link>https://lyra95.github.io/docs/aws/ec2-1/</link>
+        <pubDate>Sun, 09 May 2021 22:50:44 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/aws/ec2-1/</guid>
+        <description>실행 환경 OS : windows 10 64bits
+ssh : openSSH
+Setup EC2/User Guide for Linux Instances/Set up을 참고했다.
+다운받은 {key-pair-name}.pem은 어디 까먹지 않을 경로에 둔다.
+주의
+Create a key pair 스텝을 진행하는 과정에서, 다음과 같은 설명이 있다.
+ If you will use an SSH client on a macOS or Linux computer to connect to your Linux instance, use the following command to set the permissions of your private key file so that only you can read it.</description>
+      </item>
+      
+      <item>
+        <title>aws EC2 server ADD USER</title>
+        <link>https://lyra95.github.io/docs/aws/ec2-2/</link>
+        <pubDate>Sun, 09 May 2021 22:50:44 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/aws/ec2-2/</guid>
+        <description>기존 유저로 새 유저 생성 가이드 참고.
+rsa key pair는 이미 생성해서 4.번부터(sudo adduser {유저이름}) 6.b(chmod 600 .ssh\authorized_keys) 까지 따라했다.
+sudo adduser newuser sudo su - newuser mkdir .ssh key pair(for new user)의 public key를 ec2 서버에 추가하기 key pair를 안 만들었다면 openSSH든 putty든 아마존에서 create key pair를 하든 아무튼 생성한다.
+ ssh-keygen -y -f /path_to_key_pair/key-pair-name.pem로 public key를 얻는다. 대충 다음과 같이 생겼을 것이다. 복사를 한다.
+1  ssh-rsa aaaaaaaasdfjlsjadfl;ajf;asdjf어쩌고저쩌고asdjflas   ec2 서버에 접속해서 새 계정의 홈 디렉토리로 가서, 윗 단계에서 생성한 .</description>
+      </item>
+      
+      <item>
+        <title>vs code remote:ssh로 ec2 접속</title>
+        <link>https://lyra95.github.io/docs/aws/ec2-3/</link>
+        <pubDate>Mon, 10 May 2021 19:36:40 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/aws/ec2-3/</guid>
+        <description>먼저 vscode에서 remote - ssh 애드온을 설치한다.
+왼쪽 탭에 remote explore라고 새로운 탭이 생긴다. ssh targets에 아직 아무것도 없다.
+톱니바퀴를 눌러서 config파일을 눌러서 다음과 같이 내용을 수정했다.
+1 2 3 4 5  # Read more about SSH config files: https://linux.die.net/man/5/ssh_config Host {아무거나 display할 이름} HostName {ec2 인스턴스의 dns나 ipv4} User ec2-user IdentityFile {key pair pem 파일 경로}   error: The process tried to write to a nonexistent pipe config 파일 경로가 c:\users\{유저이름}\.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

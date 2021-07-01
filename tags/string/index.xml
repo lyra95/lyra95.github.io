@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>string on ZDoc</title>
+    <link>https://lyra95.github.io/tags/string/</link>
+    <description>Recent content in string on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 01 Jun 2021 03:03:04 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/string/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Print하지 않고 Format String 쓰기</title>
+        <link>https://lyra95.github.io/docs/go/format-string/</link>
+        <pubDate>Tue, 01 Jun 2021 03:03:04 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/format-string/</guid>
+        <description>fmt.SprintF(s string, a ...interface{}) string로 가능
+1 2  var tmp string tmp = fmt.Sprintf(&amp;#34;// Date : %v %v %v\n&amp;#34;, year, month, day)   </description>
+      </item>
+      
+    
+  </channel>
+</rss>

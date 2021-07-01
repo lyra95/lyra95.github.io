@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on ZDoc</title>
+    <link>https://lyra95.github.io/tags/git/</link>
+    <description>Recent content in git on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 20 May 2021 19:06:48 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Git command list</title>
+        <link>https://lyra95.github.io/docs/git/gitcommand/</link>
+        <pubDate>Thu, 20 May 2021 19:06:48 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/git/gitcommand/</guid>
+        <description>git docs
+git 관리모듈 생성
+git init {path}
+virsion history 보기
+git log
+&amp;ndash;stat 수정된 파일과 몇 line 수정됬는지 자세히 보기
+-p
+바뀐 status 보기
+git status
+변경사항 staging
+git add {filename}
+새 버젼 만들기
+git commit
+-m {msg}
+업로드
+git push
+차이점 보기
+git diff
+마지막 버전으로 돌아가기
+git reset &amp;ndash;hard
+특정 버전으로 이동(commit ID는 git log로 볼 수 있음)
+git checkout {commit ID}
+git checkout {branch name}
+특정 버전으로 리셋(그 버전 이후 버전들 삭제됨)</description>
+      </item>
+      
+      <item>
+        <title>.gitignore로 일부 파일 제외하기</title>
+        <link>https://lyra95.github.io/docs/git/git-ignore/</link>
+        <pubDate>Fri, 07 May 2021 22:45:57 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/git/git-ignore/</guid>
+        <description>pycahce,ps1같은 파일을 깃헙에 올리고 싶지는 않을 것이다.
+이를 제외하려면 다음과 같이 하면된다.
+ 프로젝트 최상위 디렉토리에 .gitignore 파일 생성 무시하고자하는 파일, 디렉토리를 .gitignore에 작성  와일드카드를 써서 ps1파일을 싹다 제외시켰다.
+*.ps1 .vscode/ </description>
+      </item>
+      
+    
+  </channel>
+</rss>

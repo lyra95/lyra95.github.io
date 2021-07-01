@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>package on ZDoc</title>
+    <link>https://lyra95.github.io/tags/package/</link>
+    <description>Recent content in package on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 01 Jun 2021 03:16:24 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/package/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>strings 패키지</title>
+        <link>https://lyra95.github.io/docs/go/strings/</link>
+        <pubDate>Tue, 01 Jun 2021 03:16:24 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/strings/</guid>
+        <description>https://golang.org/pkg/strings/
+스트링 관련 많은 함수들을 제공한다. 몇가지 예를 들면
+func Contains(s, substr string) bool
+func HasSuffix(s, suffix string) bool
+func Index(s, substr string) int (첫번째 index)
+func Split(s, sep string) []string
+func Replace(s, old, new string, n int) string (n개의 old를 new로 치환한 카피 리턴)
+func ToUpper(s string) string
+func TrimRight(s string, cutset string) (string)
+1 2  fmt.Print(strings.TrimRight(&amp;#34;¡¡¡Hello, Gophers!!!&amp;#34;, &amp;#34;!¡&amp;#34;)) // ¡¡¡Hello, Gophers   </description>
+      </item>
+      
+      <item>
+        <title>String &lt;-&gt; Int 변환하기</title>
+        <link>https://lyra95.github.io/docs/go/strconv/</link>
+        <pubDate>Tue, 01 Jun 2021 01:31:21 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/strconv/</guid>
+        <description>strconv 패키지에 string, int를 변환하는 함수들이 있다.
+strconv.Atoi(s string) (int,erorr)로 string-&amp;gt;int
+strconv.ItoA(n int) string로 int-&amp;gt;string</description>
+      </item>
+      
+    
+  </channel>
+</rss>

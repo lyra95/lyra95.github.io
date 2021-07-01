@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>server on ZDoc</title>
+    <link>https://lyra95.github.io/tags/server/</link>
+    <description>Recent content in server on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 07 Jun 2021 15:57:24 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>aws EC2 server instance 생성</title>
+        <link>https://lyra95.github.io/docs/aws/ec2-1/</link>
+        <pubDate>Sun, 09 May 2021 22:50:44 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/aws/ec2-1/</guid>
+        <description>실행 환경 OS : windows 10 64bits
+ssh : openSSH
+Setup EC2/User Guide for Linux Instances/Set up을 참고했다.
+다운받은 {key-pair-name}.pem은 어디 까먹지 않을 경로에 둔다.
+주의
+Create a key pair 스텝을 진행하는 과정에서, 다음과 같은 설명이 있다.
+ If you will use an SSH client on a macOS or Linux computer to connect to your Linux instance, use the following command to set the permissions of your private key file so that only you can read it.</description>
+      </item>
+      
+      <item>
+        <title>aws EC2 server ADD USER</title>
+        <link>https://lyra95.github.io/docs/aws/ec2-2/</link>
+        <pubDate>Sun, 09 May 2021 22:50:44 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/aws/ec2-2/</guid>
+        <description>기존 유저로 새 유저 생성 가이드 참고.
+rsa key pair는 이미 생성해서 4.번부터(sudo adduser {유저이름}) 6.b(chmod 600 .ssh\authorized_keys) 까지 따라했다.
+sudo adduser newuser sudo su - newuser mkdir .ssh key pair(for new user)의 public key를 ec2 서버에 추가하기 key pair를 안 만들었다면 openSSH든 putty든 아마존에서 create key pair를 하든 아무튼 생성한다.
+ ssh-keygen -y -f /path_to_key_pair/key-pair-name.pem로 public key를 얻는다. 대충 다음과 같이 생겼을 것이다. 복사를 한다.
+1  ssh-rsa aaaaaaaasdfjlsjadfl;ajf;asdjf어쩌고저쩌고asdjflas   ec2 서버에 접속해서 새 계정의 홈 디렉토리로 가서, 윗 단계에서 생성한 .</description>
+      </item>
+      
+      <item>
+        <title>Chat Server Client With Golang (draft)</title>
+        <link>https://lyra95.github.io/docs/go/chat-server-client-with-golang/</link>
+        <pubDate>Mon, 07 Jun 2021 15:57:24 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/go/chat-server-client-with-golang/</guid>
+        <description>(https://github.com/lyra95/chat-server-client-with-golang/tree/master)[https://github.com/lyra95/chat-server-client-with-golang/tree/master]
+(진행중)</description>
+      </item>
+      
+    
+  </channel>
+</rss>

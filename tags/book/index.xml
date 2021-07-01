@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>book on ZDoc</title>
+    <link>https://lyra95.github.io/tags/book/</link>
+    <description>Recent content in book on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 08 May 2021 00:29:40 +0900</lastBuildDate>
+    
+        <atom:link href="https://lyra95.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Reviews</title>
+        <link>https://lyra95.github.io/docs/book-review/</link>
+        <pubDate>Sat, 08 May 2021 00:29:40 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/book-review/</guid>
+        <description>지금까지 읽은 책, 수강한 코스, 시청한 유튜브 채널을 리뷰하고 추천하는 글입니다.
+Computer Science General   Crash Course: Computer Science (10/10)
+전산학과/컴공 입문생에게 &amp;ldquo;대충 너가 4년간 배울 내용이 이거야&amp;quot;하고 보여주고 싶다. 종이에 구멍 뚫던 시절 이야기, 트랜지스터로 논리 게이트 짜기, cpu/register bus, OS, Network 등등 없는 얘기가 없다. 이거 본다고 갑자기 Node.js 다룰 줄 알게되거나 하는 건 아니지만, 자신이 컴공상식이 부족하다고 생각되면 보길.
+OS편 어느 컴공 대학생의 코멘트: &amp;ldquo;Two semesters in 12 minutes.</description>
+      </item>
+      
+    
+  </channel>
+</rss>
