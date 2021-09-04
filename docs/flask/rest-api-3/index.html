@@ -1083,7 +1083,7 @@
 <meta property="og:url" content="https://lyra95.github.io/docs/flask/rest-api-3/">
 <meta property="og:type" content="article">
 
-<meta name="generator" content="Hugo 0.84.3" />
+<meta name="generator" content="Hugo 0.88.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://lyra95.github.io/docs/flask/rest-api-3/">
@@ -3151,7 +3151,7 @@
     <h2 id="전체코드">전체코드</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3216,7 +3216,7 @@
 </span><span class="lnt">63
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="c1">#main.py</span>
+<pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="c1">#main.py</span>
 <span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
 <span class="kn">from</span> <span class="nn">flask_restful</span> <span class="kn">import</span> <span class="n">Api</span><span class="p">,</span> <span class="n">Resource</span><span class="p">,</span> <span class="n">reqparse</span><span class="p">,</span> <span class="n">abort</span>
 <span class="kn">from</span> <span class="nn">flask_caching</span> <span class="kn">import</span> <span class="n">Cache</span>
@@ -3295,11 +3295,11 @@
 <blockquote>
 <p><a href="https://flask-caching.readthedocs.io/en/latest/api.html#cache-api" target="_blank">https://flask-caching.readthedocs.io/en/latest/api.html#cache-api</a></p>
 </blockquote>
-<p>캐시를 사용할 함수에 데코레이터[wikidocs]](<a href="https://wikidocs.net/23106">https://wikidocs.net/23106</a>)로 적용한다.<br />
+<p>캐시를 사용할 함수에 데코레이터[wikidocs]](<a href="https://wikidocs.net/23106" target="_blank">https://wikidocs.net/23106</a>)로 적용한다.<br />
 만일 다른 데코레이터들도 있다면 데코레이터들 간 순서가 중요하다.<a href="https://flask-caching.readthedocs.io/en/latest/#caching-view-functions" target="_blank">Caching View Functions Warning 참고</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3313,7 +3313,7 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="k">class</span> <span class="nc">Video</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>    
+<pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="k">class</span> <span class="nc">Video</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>    
     <span class="nd">@cache</span><span class="o">.</span><span class="n">cached</span><span class="p">(</span><span class="n">key_prefix</span><span class="o">=</span><span class="s1">&#39;get</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">video_id</span><span class="p">):</span>
         <span class="c1">#to see if cache work</span>
@@ -3333,14 +3333,14 @@
 <p>아까 말했듯, delete나 put을 할 때 get의 캐시도 지워줘야 한다. cache.delete(키)를 활용해 지울 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">video_id</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">video_id</span><span class="p">):</span>
         <span class="n">abort_video_not_exist</span><span class="p">(</span><span class="n">video_id</span><span class="p">)</span>
         <span class="k">del</span> <span class="n">videos</span><span class="p">[</span><span class="n">video_id</span><span class="p">]</span>
         <span class="n">cache</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;get/videos/</span><span class="si">{</span><span class="n">video_id</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>

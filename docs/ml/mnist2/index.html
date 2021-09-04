@@ -1083,7 +1083,7 @@
 <meta property="og:url" content="https://lyra95.github.io/docs/ml/mnist2/">
 <meta property="og:type" content="article">
 
-<meta name="generator" content="Hugo 0.84.3" />
+<meta name="generator" content="Hugo 0.88.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://lyra95.github.io/docs/ml/mnist2/">
@@ -3155,7 +3155,7 @@
 <p><code>nn.Module</code>을 상속받는 클래스를 생성하고, <code>__init__, __foward__</code>를 구현해서 모델 아키텍쳐를 설정할 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3175,7 +3175,7 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">torch</span> <span class="kn">import</span> <span class="n">nn</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">torch</span> <span class="kn">import</span> <span class="n">nn</span>
 <span class="k">class</span> <span class="nc">NeuralNetwork</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">NeuralNetwork</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
@@ -3198,10 +3198,10 @@
 </div><p>이제 다음과 같이 모델 인스턴스를 생성하면된다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">model</span> <span class="o">=</span> <span class="n">NeuralNetwork</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">model</span> <span class="o">=</span> <span class="n">NeuralNetwork</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -3210,7 +3210,7 @@
 <p><code>print(model)</code>로 모델 아키텍쳐를 확인할 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3223,7 +3223,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">NeuralNetwork</span><span class="p">(</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">NeuralNetwork</span><span class="p">(</span>
   <span class="p">(</span><span class="n">flatten</span><span class="p">)</span><span class="err">:</span> <span class="n">Flatten</span><span class="p">(</span><span class="n">start_dim</span><span class="p">=</span><span class="n">1</span><span class="p">,</span> <span class="n">end_dim</span><span class="p">=-</span><span class="n">1</span><span class="p">)</span>
   <span class="p">(</span><span class="n">linear_relu_stack</span><span class="p">)</span><span class="err">:</span> <span class="n">Sequential</span><span class="p">(</span>
     <span class="p">(</span><span class="n">0</span><span class="p">)</span><span class="err">:</span> <span class="n">Linear</span><span class="p">(</span><span class="n">in_features</span><span class="p">=</span><span class="n">784</span><span class="p">,</span> <span class="n">out_features</span><span class="p">=</span><span class="n">512</span><span class="p">,</span> <span class="n">bias</span><span class="p">=</span><span class="n">True</span><span class="p">)</span>
@@ -3239,22 +3239,22 @@
 </div><p>model에는 한 번에 여러개의 이미지 데이터가 들어갈 수 있다. 예를 들어서 다음과 같이 64개의 이미지(1*28*28) 데이터를 랜덤 생성해서 model에 input으로 넣으면,</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">64</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">64</span>
 <span class="n">imgs</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">28</span><span class="p">,</span><span class="mi">28</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">(</span><span class="n">imgs</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">torch</span><span class="p">.</span><span class="n">Size</span><span class="p">([</span><span class="n">64</span><span class="p">,</span> <span class="n">10</span><span class="p">])</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">torch</span><span class="p">.</span><span class="n">Size</span><span class="p">([</span><span class="n">64</span><span class="p">,</span> <span class="n">10</span><span class="p">])</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>이렇게 64개 이미지에 대한 예측 텐서가 나온다.</p>
@@ -3262,17 +3262,17 @@
 <p><code>model.named_parameters()</code>, <code>model.parameters</code>로 네트워크 아키텍쳐 각 레이어의 파라미터들에 접근할 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">named_parameters</span><span class="p">():</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">named_parameters</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Layer: </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> | Size: </span><span class="si">{</span><span class="n">param</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="si">}</span><span class="s2"> | Values : </span><span class="si">{</span><span class="n">param</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3291,7 +3291,7 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">Layer</span><span class="err">:</span> <span class="n">linear_relu_stack</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">weight</span> <span class="p">|</span> <span class="n">Size</span><span class="err">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Size</span><span class="p">([</span><span class="n">512</span><span class="p">,</span> <span class="n">784</span><span class="p">])</span> <span class="p">|</span> <span class="n">Values</span> <span class="err">:</span> <span class="n">tensor</span><span class="p">([[</span> <span class="n">0</span><span class="p">.</span><span class="n">0173</span><span class="p">,</span>  <span class="n">0</span><span class="p">.</span><span class="n">0143</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0196</span><span class="p">,</span>  <span class="p">...,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0248</span><span class="p">,</span>  <span class="n">0</span><span class="p">.</span><span class="n">0211</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0135</span><span class="p">],</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">Layer</span><span class="err">:</span> <span class="n">linear_relu_stack</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">weight</span> <span class="p">|</span> <span class="n">Size</span><span class="err">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Size</span><span class="p">([</span><span class="n">512</span><span class="p">,</span> <span class="n">784</span><span class="p">])</span> <span class="p">|</span> <span class="n">Values</span> <span class="err">:</span> <span class="n">tensor</span><span class="p">([[</span> <span class="n">0</span><span class="p">.</span><span class="n">0173</span><span class="p">,</span>  <span class="n">0</span><span class="p">.</span><span class="n">0143</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0196</span><span class="p">,</span>  <span class="p">...,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0248</span><span class="p">,</span>  <span class="n">0</span><span class="p">.</span><span class="n">0211</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0135</span><span class="p">],</span>
         <span class="p">[-</span><span class="n">0</span><span class="p">.</span><span class="n">0005</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0077</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0185</span><span class="p">,</span>  <span class="p">...,</span>  <span class="n">0</span><span class="p">.</span><span class="n">0282</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0144</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0277</span><span class="p">]],</span>
        <span class="n">device</span><span class="p">=</span><span class="s1">&#39;cuda:0&#39;</span><span class="p">,</span> <span class="n">grad_fn</span><span class="p">=&lt;</span><span class="n">SliceBackward</span><span class="p">&gt;)</span> 
 
@@ -3313,7 +3313,7 @@
 </div><h2 id="train-loop-test-loop-구현">train loop, test loop 구현</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3332,7 +3332,7 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">train_loop</span><span class="p">(</span><span class="n">dataloader</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">loss_fn</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">train_loop</span><span class="p">(</span><span class="n">dataloader</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">loss_fn</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">):</span>
     <span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataloader</span><span class="o">.</span><span class="n">dataset</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">batch</span><span class="p">,</span> <span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">dataloader</span><span class="p">):</span>
         <span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>    
@@ -3361,7 +3361,7 @@
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3378,7 +3378,7 @@
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">test_loop</span><span class="p">(</span><span class="n">dataloader</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">loss_fn</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">test_loop</span><span class="p">(</span><span class="n">dataloader</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">loss_fn</span><span class="p">):</span>
     <span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataloader</span><span class="o">.</span><span class="n">dataset</span><span class="p">)</span>
     <span class="n">test_loss</span><span class="p">,</span> <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
 
@@ -3398,12 +3398,12 @@
 </div><h2 id="하이퍼-파라미터-설정">하이퍼 파라미터 설정</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">loss_fn</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">loss_fn</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">1e-3</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">)</span>
 </code></pre></td></tr></table>
@@ -3414,7 +3414,7 @@
 <h2 id="트레이닝-하기">트레이닝 하기</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3426,7 +3426,7 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">time</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">time</span>
 <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">process_time</span><span class="p">()</span>
 <span class="n">epochs</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">epochs</span><span class="p">):</span>
@@ -3443,17 +3443,17 @@ time 라이브러리를 활용해서 총 걸리는 시간을 재보았다. (gpu 
 <p>네트워크 파라미터들을 보면 조금 달라진 것을 알 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">named_parameters</span><span class="p">():</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">named_parameters</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Layer: </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> | Size: </span><span class="si">{</span><span class="n">param</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="si">}</span><span class="s2"> | Values : </span><span class="si">{</span><span class="n">param</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3472,7 +3472,7 @@ time 라이브러리를 활용해서 총 걸리는 시간을 재보았다. (gpu 
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">Layer</span><span class="err">:</span> <span class="n">linear_relu_stack</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">weight</span> <span class="p">|</span> <span class="n">Size</span><span class="err">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Size</span><span class="p">([</span><span class="n">512</span><span class="p">,</span> <span class="n">784</span><span class="p">])</span> <span class="p">|</span> <span class="n">Values</span> <span class="err">:</span> <span class="n">tensor</span><span class="p">([[-</span><span class="n">0</span><span class="p">.</span><span class="n">0281</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0329</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0056</span><span class="p">,</span>  <span class="p">...,</span>  <span class="n">0</span><span class="p">.</span><span class="n">0345</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0171</span><span class="p">,</span>  <span class="n">0</span><span class="p">.</span><span class="n">0036</span><span class="p">],</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">Layer</span><span class="err">:</span> <span class="n">linear_relu_stack</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">weight</span> <span class="p">|</span> <span class="n">Size</span><span class="err">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Size</span><span class="p">([</span><span class="n">512</span><span class="p">,</span> <span class="n">784</span><span class="p">])</span> <span class="p">|</span> <span class="n">Values</span> <span class="err">:</span> <span class="n">tensor</span><span class="p">([[-</span><span class="n">0</span><span class="p">.</span><span class="n">0281</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0329</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0056</span><span class="p">,</span>  <span class="p">...,</span>  <span class="n">0</span><span class="p">.</span><span class="n">0345</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0171</span><span class="p">,</span>  <span class="n">0</span><span class="p">.</span><span class="n">0036</span><span class="p">],</span>
         <span class="p">[</span> <span class="n">0</span><span class="p">.</span><span class="n">0189</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0298</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0091</span><span class="p">,</span>  <span class="p">...,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0213</span><span class="p">,</span>  <span class="n">0</span><span class="p">.</span><span class="n">0022</span><span class="p">,</span> <span class="p">-</span><span class="n">0</span><span class="p">.</span><span class="n">0199</span><span class="p">]],</span>
        <span class="n">device</span><span class="p">=</span><span class="s1">&#39;cuda:0&#39;</span><span class="p">,</span> <span class="n">grad_fn</span><span class="p">=&lt;</span><span class="n">SliceBackward</span><span class="p">&gt;)</span> 
 
@@ -3494,7 +3494,7 @@ time 라이브러리를 활용해서 총 걸리는 시간을 재보았다. (gpu 
 </div><p>실험삼아 다음 그림을 model에 넣어서 결과를 보자. (매번 셔플되므로 그림은 실행할 때마다 다르다)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3503,7 +3503,7 @@ time 라이브러리를 활용해서 총 걸리는 시간을 재보았다. (gpu 
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="c1"># Display image and label.</span>
 <span class="n">train_features</span><span class="p">,</span> <span class="n">train_labels</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">train_dataloader</span><span class="p">))</span>
 <span class="n">img</span> <span class="o">=</span> <span class="n">train_features</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
@@ -3517,19 +3517,19 @@ time 라이브러리를 활용해서 총 걸리는 시간을 재보았다. (gpu 
 </p></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">model</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">))</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">model</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">))</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">tensor</span><span class="p">([[</span><span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0760</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0061</span><span class="p">,</span> <span class="n">3</span><span class="p">.</span><span class="n">4088</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">3</span><span class="p">.</span><span class="n">1719</span><span class="p">,</span> <span class="n">3</span><span class="p">.</span><span class="n">3842</span><span class="p">,</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">tensor</span><span class="p">([[</span><span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0760</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0061</span><span class="p">,</span> <span class="n">3</span><span class="p">.</span><span class="n">4088</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">3</span><span class="p">.</span><span class="n">1719</span><span class="p">,</span> <span class="n">3</span><span class="p">.</span><span class="n">3842</span><span class="p">,</span>
          <span class="n">5</span><span class="p">.</span><span class="n">4894</span><span class="p">]],</span> <span class="n">device</span><span class="p">=</span><span class="s1">&#39;cuda:0&#39;</span><span class="p">,</span> <span class="n">grad_fn</span><span class="p">=&lt;</span><span class="n">ReluBackward0</span><span class="p">&gt;)</span>
 </code></pre></td></tr></table>
 </div>
@@ -3541,13 +3541,13 @@ time 라이브러리를 활용해서 총 걸리는 시간을 재보았다. (gpu 
 <p>다음과 같이 model을 프로젝트 최상위에 model_weights.pt라는 이름으로 저장할 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">torch</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">torch</span>
 <span class="kn">import</span> <span class="nn">torch.onnx</span> <span class="k">as</span> <span class="nn">onnx</span>
 <span class="kn">import</span> <span class="nn">torchvision.models</span> <span class="k">as</span> <span class="nn">models</span>
 <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="s1">&#39;model_weights.pt&#39;</span><span class="p">)</span>
@@ -3556,12 +3556,12 @@ time 라이브러리를 활용해서 총 걸리는 시간을 재보았다. (gpu 
 </div><p>로드를 할 때는 먼저 인스턴스를 하나 이니셜라이즈한 후 로드해온다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">model2</span> <span class="o">=</span> <span class="n">NeuralNetwork</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">model2</span> <span class="o">=</span> <span class="n">NeuralNetwork</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="n">model2</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;model_weights.pt&#39;</span><span class="p">))</span>
 <span class="n">model2</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
 </code></pre></td></tr></table>
@@ -3572,22 +3572,22 @@ time 라이브러리를 활용해서 총 걸리는 시간을 재보았다. (gpu 
 <p>다른 방법도 있다. 인스턴스를 이니셜라이제이션할 필요가 없다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="s1">&#39;model.pth&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="s1">&#39;model.pth&#39;</span><span class="p">)</span>
 <span class="n">model2</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;model.pth&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>또 다른 방법으로, 파이토치 이외의 플랫폼에서도 로드를 하고 싶으면 .onnx 확장자로 다음과 같이 저장한다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">input_image</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">28</span><span class="p">,</span><span class="mi">28</span><span class="p">))</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">input_image</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">28</span><span class="p">,</span><span class="mi">28</span><span class="p">))</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="n">onnx</span><span class="o">.</span><span class="n">export</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">input_image</span><span class="p">,</span> <span class="s1">&#39;model.onnx&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>

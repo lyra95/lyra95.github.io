@@ -1083,7 +1083,7 @@
 <meta property="og:url" content="https://lyra95.github.io/docs/aws/ec2-2/">
 <meta property="og:type" content="article">
 
-<meta name="generator" content="Hugo 0.84.3" />
+<meta name="generator" content="Hugo 0.88.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://lyra95.github.io/docs/aws/ec2-2/">
@@ -3151,7 +3151,7 @@
     <h2 id="기존-유저로-새-유저-생성">기존 유저로 새 유저 생성</h2>
 <p><a href="https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/managing-users.html" target="_blank">가이드</a> 참고.</p>
 <p>rsa key pair는 이미 생성해서 4.번부터(<code>sudo adduser {유저이름}</code>) 6.b(<code>chmod 600 .ssh\authorized_keys</code>) 까지 따라했다.</p>
-<pre><code>sudo adduser newuser
+<pre tabindex="0"><code>sudo adduser newuser
 sudo su - newuser
 mkdir .ssh
 </code></pre><h2 id="key-pairfor-new-user의-public-key를-ec2-서버에-추가하기">key pair(for new user)의 public key를 ec2 서버에 추가하기</h2>
@@ -3159,10 +3159,10 @@ mkdir .ssh
 <p><code> ssh-keygen -y -f /path_to_key_pair/key-pair-name.pem</code>로  public key를 얻는다. 대충 다음과 같이 생겼을 것이다. 복사를 한다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-txt" data-lang="txt">ssh-rsa aaaaaaaasdfjlsjadfl;ajf;asdjf어쩌고저쩌고asdjflas
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">ssh-rsa aaaaaaaasdfjlsjadfl;ajf;asdjf어쩌고저쩌고asdjflas
 </code></pre></td></tr></table>
 </div>
 </div><p>ec2 서버에 접속해서 새 계정의 홈 디렉토리로 가서, 윗 단계에서 생성한 <code>.ssh/authorized_keys</code>에 붙여넣기 한다.</p>

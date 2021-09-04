@@ -1083,7 +1083,7 @@
 <meta property="og:url" content="https://lyra95.github.io/docs/ml/mnist/">
 <meta property="og:type" content="article">
 
-<meta name="generator" content="Hugo 0.84.3" />
+<meta name="generator" content="Hugo 0.88.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://lyra95.github.io/docs/ml/mnist/">
@@ -3157,12 +3157,12 @@
 <p>먼저 cpu와 gpu중 device를 선택한다. gpu가 있고 cuda가 설치되어 있으면 cuda를 사용하고, 아니면 cpu를 사용한다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">torch</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">torch</span>
 <span class="n">device</span> <span class="o">=</span> <span class="s1">&#39;cuda&#39;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s1">&#39;cpu&#39;</span>
 <span class="c1">#print(&#39;Using {} device&#39;.format(device)) 로 device 확인가능</span>
 </code></pre></td></tr></table>
@@ -3172,7 +3172,7 @@
 <p>FashionMNIST는 28*28 사이즈, 흑백, 10 종류의 의상 이미지 데이터이다. 다음 코드로 데이터를 <code>{프로젝트최상위}/data</code>에 설치할 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3180,7 +3180,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">Dataset</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">Dataset</span>
 <span class="kn">from</span> <span class="nn">torchvision</span> <span class="kn">import</span> <span class="n">datasets</span>
 <span class="kn">from</span> <span class="nn">torchvision.transforms</span> <span class="kn">import</span> <span class="n">ToTensor</span>
 <span class="n">training_data</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">FashionMNIST</span><span class="p">(</span><span class="n">root</span><span class="o">=</span><span class="s2">&#34;data&#34;</span><span class="p">,</span> <span class="n">train</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">download</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">transform</span><span class="o">=</span><span class="n">ToTensor</span><span class="p">())</span>
@@ -3204,7 +3204,7 @@ gredient 부분에 대해서 <a href="https://pytorch.org/tutorials/beginner/bas
 <p>다음 코드로 전체 데이터 중에 <code>rows*cols=9</code>개 만큼의 데이터를 가져와서 이미지를 볼 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3229,7 +3229,7 @@ gredient 부분에 대해서 <a href="https://pytorch.org/tutorials/beginner/bas
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="n">labels_map</span> <span class="o">=</span> <span class="p">{</span>
     <span class="mi">0</span><span class="p">:</span> <span class="s2">&#34;T-Shirt&#34;</span><span class="p">,</span>
     <span class="mi">1</span><span class="p">:</span> <span class="s2">&#34;Trouser&#34;</span><span class="p">,</span>
@@ -3262,13 +3262,13 @@ gredient 부분에 대해서 <a href="https://pytorch.org/tutorials/beginner/bas
 <h2 id="데이터-로딩하기">데이터 로딩하기</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">DataLoader</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">DataLoader</span>
 
 <span class="n">train_dataloader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">training_data</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">test_dataloader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">test_data</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -3285,19 +3285,19 @@ gredient 부분에 대해서 <a href="https://pytorch.org/tutorials/beginner/bas
 <p><code>iter(train_dataloader)</code>로 iterator화 할 수 있다. train_dataloader의 첫번째에 어떤게 들어있는지 보자.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">train_dataloader</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">train_dataloader</span><span class="p">)</span>
 <span class="n">first</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">first</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3320,7 +3320,7 @@ gredient 부분에 대해서 <a href="https://pytorch.org/tutorials/beginner/bas
 </span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">[</span><span class="n">tensor</span><span class="p">(</span><span class="no">[[[[0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000]</span><span class="p">,</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">[</span><span class="n">tensor</span><span class="p">(</span><span class="no">[[[[0.0000, 0.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000]</span><span class="p">,</span>
           <span class="p">[</span><span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span>  <span class="p">...,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">],</span>
           <span class="p">[</span><span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span>  <span class="p">...,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">,</span> <span class="n">0</span><span class="p">.</span><span class="n">0000</span><span class="p">],</span>
           <span class="p">...,</span>
@@ -3346,27 +3346,27 @@ gredient 부분에 대해서 <a href="https://pytorch.org/tutorials/beginner/bas
 </div><p>잘 모르겠지만 first에 텐서가 2개 들어있다. 다음 결과를 보면 2개의 정체가 뭔지 알 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">imgs</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">first</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">imgs</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">first</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">imgs</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">labels</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">torch</span><span class="p">.</span><span class="n">Size</span><span class="p">([</span><span class="n">64</span><span class="p">,</span> <span class="n">1</span><span class="p">,</span> <span class="n">28</span><span class="p">,</span> <span class="n">28</span><span class="p">])</span> <span class="n">torch</span><span class="p">.</span><span class="n">Size</span><span class="p">([</span><span class="n">64</span><span class="p">])</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">torch</span><span class="p">.</span><span class="n">Size</span><span class="p">([</span><span class="n">64</span><span class="p">,</span> <span class="n">1</span><span class="p">,</span> <span class="n">28</span><span class="p">,</span> <span class="n">28</span><span class="p">])</span> <span class="n">torch</span><span class="p">.</span><span class="n">Size</span><span class="p">([</span><span class="n">64</span><span class="p">])</span>
 </code></pre></td></tr></table>
 </div>
 </div><p><code>batch_size=64</code>와 이미지 파일이 <strong>흑백</strong> 28*28 픽셀이었다는 것을 상기하자. imgs는 batch_size개수만큼의 데이터, labels는 각각 데이터의 레이블이다.</p>
 <p>실제로 그림을 그려서 확인해볼수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3378,7 +3378,7 @@ gredient 부분에 대해서 <a href="https://pytorch.org/tutorials/beginner/bas
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="c1"># Display image and label.</span>
 <span class="n">train_features</span><span class="p">,</span> <span class="n">train_labels</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">train_dataloader</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Feature batch shape: </span><span class="si">{</span><span class="n">train_features</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>

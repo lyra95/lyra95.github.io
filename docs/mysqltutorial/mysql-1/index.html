@@ -1083,7 +1083,7 @@
 <meta property="og:url" content="https://lyra95.github.io/docs/mysqltutorial/mysql-1/">
 <meta property="og:type" content="article">
 
-<meta name="generator" content="Hugo 0.84.3" />
+<meta name="generator" content="Hugo 0.88.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://lyra95.github.io/docs/mysqltutorial/mysql-1/">
@@ -3180,7 +3180,7 @@
 <p>비밀번호를 입력하라고 할 텐데, 설치할 때 정했던 비번입니다. 성공할 시 터미널 출력결과가 다음과 비슷할 것입니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3197,7 +3197,7 @@
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span> <span class="n">mysql</span> <span class="n">-uroot</span> <span class="n">-p</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span> <span class="n">mysql</span> <span class="n">-uroot</span> <span class="n">-p</span>
 <span class="n">Enter</span> <span class="n">password</span><span class="err">:</span> <span class="p">******</span>
 <span class="n">Welcome</span> <span class="n">to</span> <span class="n">the</span> <span class="n">MySQL</span> <span class="n">monitor</span><span class="p">.</span>  <span class="n">Commands</span> <span class="k">end</span> <span class="n">with</span> <span class="p">;</span> <span class="n">or</span> <span class="p">\</span><span class="n">g</span><span class="p">.</span>
 <span class="n">Your</span> <span class="n">MySQL</span> <span class="n">connection</span> <span class="n">id</span> <span class="n">is</span> <span class="n">8</span>
@@ -3219,13 +3219,13 @@
 <p>server가 켜져 있는지 확인해봅니다:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span> <span class="n">mysql</span> <span class="n">-u</span> <span class="n">root</span> <span class="n">-p</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span> <span class="n">mysql</span> <span class="n">-u</span> <span class="n">root</span> <span class="n">-p</span>
 <span class="n">Enter</span> <span class="n">password</span><span class="err">:</span> <span class="p">******</span>
 <span class="n">ERROR</span> <span class="n">2003</span> <span class="p">(</span><span class="n">HY000</span><span class="p">)</span><span class="err">:</span> <span class="n">Can</span><span class="s1">&#39;t connect to MySQL server on &#39;</span><span class="n">localhost</span><span class="err">:</span><span class="n">xxxx</span><span class="err">&#39;</span> <span class="p">(</span><span class="n">10061</span><span class="p">)</span>
 <span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span>
@@ -3234,18 +3234,18 @@
 </div><p>서버가 꺼져있습니다. <code>{설치경로}\mysql\bin</code>에서 터미널을 켜고 <code>mysqld</code> 커맨드를 입력합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span> <span class="n">mysqld</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span> <span class="n">mysqld</span>
 <span class="n">_</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>서버가 켜진 동안 커맨드가 완료되지 않을 것입니다. 새로운 터미널 창을 열고 mysql을 실행할 수 있습니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3263,7 +3263,7 @@
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span> <span class="n">mysql</span> <span class="n">-u</span> <span class="n">root</span> <span class="n">-p</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span> <span class="n">mysql</span> <span class="n">-u</span> <span class="n">root</span> <span class="n">-p</span>
 <span class="n">Enter</span> <span class="n">password</span><span class="err">:</span> <span class="p">******</span>
 <span class="n">Welcome</span> <span class="n">to</span> <span class="n">the</span> <span class="n">MySQL</span> <span class="n">monitor</span><span class="p">.</span>  <span class="n">Commands</span> <span class="k">end</span> <span class="n">with</span> <span class="p">;</span> <span class="n">or</span> <span class="p">\</span><span class="n">g</span><span class="p">.</span>
 <span class="n">Your</span> <span class="n">MySQL</span> <span class="n">connection</span> <span class="n">id</span> <span class="n">is</span> <span class="n">8</span>
@@ -3284,12 +3284,12 @@
 </div><p>서버를 종료하기 위해서는 root 권한이 필요합니다. 서버를 종료하기 위해 <code>mysqladmin -u root -p shutdown</code>를 입력합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span> <span class="n">mysqladmin</span> <span class="n">-u</span> <span class="n">root</span> <span class="n">-p</span> <span class="n">shutdown</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span> <span class="n">mysqladmin</span> <span class="n">-u</span> <span class="n">root</span> <span class="n">-p</span> <span class="n">shutdown</span>
 <span class="n">Enter</span> <span class="n">password</span><span class="err">:</span> <span class="p">******</span>
 <span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Bitnami</span><span class="p">\</span><span class="n">wampstack</span><span class="p">-</span><span class="n">8</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">5</span><span class="p">-</span><span class="n">0</span><span class="p">\</span><span class="n">mysql</span><span class="p">\</span><span class="n">bin</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>

@@ -1083,7 +1083,7 @@
 <meta property="og:url" content="https://lyra95.github.io/docs/python/argparse/">
 <meta property="og:type" content="article">
 
-<meta name="generator" content="Hugo 0.84.3" />
+<meta name="generator" content="Hugo 0.88.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://lyra95.github.io/docs/python/argparse/">
@@ -3155,7 +3155,7 @@
 <p>일단 argparse랑은 상관 없는 sum,mul함수를 작성한다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3169,7 +3169,7 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#main.py</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1">#main.py</span>
 <span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
     <span class="n">temp</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
@@ -3187,14 +3187,14 @@
 <p>다음과 같이 ArgumentParser 오브젝트를 생성한다. 그리고 어떤 종류의 argument를 받을지 <code>.add_argument()</code>로 추가할 수 있다. 물론 <code>.add_argument()</code>를 여러개 해도 된다</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">argparse</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">argparse</span>
 
 <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&#34;usage examples:</span><span class="se">\n</span><span class="s2">python main.py -op sum 1 2 3 4</span><span class="se">\n</span><span class="s2">python main.py -op mul 1 2 3 4&#34;</span><span class="p">)</span>
 
@@ -3208,12 +3208,12 @@
 <p>파싱은 <code>.parse_known_args()</code>를 통해 할 수 있다. 리턴값은 리터럴 리스트와 Namespace객체의 튜플이다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">script_arg</span><span class="p">,</span> <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_known_args</span><span class="p">()</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">script_arg</span><span class="p">,</span> <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_known_args</span><span class="p">()</span>
 <span class="c1"># print(type(parser.parse_known_args()),parser.parse_known_args())</span>
 <span class="c1"># print(args,type(args))</span>
 </code></pre></td></tr></table>
@@ -3223,7 +3223,7 @@
 <p><code>script_arg</code>에 Namespace객체가 저장되어있다. 다음과 같이 꺼낼 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3231,7 +3231,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">script_arg</span><span class="o">.</span><span class="n">op</span> <span class="o">==</span> <span class="s2">&#34;sum&#34;</span><span class="p">:</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">script_arg</span><span class="o">.</span><span class="n">op</span> <span class="o">==</span> <span class="s2">&#34;sum&#34;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">args</span><span class="p">))</span>
 <span class="k">elif</span> <span class="n">script_arg</span><span class="o">.</span><span class="n">op</span> <span class="o">==</span> <span class="s2">&#34;mul&#34;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">mul</span><span class="p">(</span><span class="n">args</span><span class="p">))</span>
@@ -3246,7 +3246,7 @@
 <p>어떤 식으로 동작하는지 다음을 참고하자.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3261,7 +3261,7 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">ml</span><span class="p">&gt;</span> <span class="n">python</span> <span class="n">main</span><span class="p">.</span><span class="n">py</span> <span class="n">-h</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">ml</span><span class="p">&gt;</span> <span class="n">python</span> <span class="n">main</span><span class="p">.</span><span class="n">py</span> <span class="n">-h</span>
 <span class="n">usage</span><span class="err">:</span> <span class="n">main</span><span class="p">.</span><span class="n">py</span> <span class="p">[</span><span class="n">-h</span><span class="p">]</span> <span class="p">[</span><span class="n">-op</span> <span class="p">{</span><span class="n">sum</span><span class="p">,</span><span class="n">mul</span><span class="p">}]</span>
 
 <span class="n">usage</span> <span class="n">examples</span><span class="err">:</span> <span class="n">python</span> <span class="n">main</span><span class="p">.</span><span class="n">py</span> <span class="n">-op</span> <span class="n">sum</span> <span class="n">1</span> <span class="n">2</span> <span class="n">3</span> <span class="n">4</span> <span class="n">python</span> <span class="n">main</span><span class="p">.</span><span class="n">py</span> <span class="n">-op</span> <span class="n">mul</span> <span class="n">1</span> <span class="n">2</span> <span class="n">3</span> <span class="n">4</span>

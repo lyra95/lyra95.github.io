@@ -1083,7 +1083,7 @@
 <meta property="og:url" content="https://lyra95.github.io/docs/go/go-test-1/">
 <meta property="og:type" content="article">
 
-<meta name="generator" content="Hugo 0.84.3" />
+<meta name="generator" content="Hugo 0.88.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://lyra95.github.io/docs/go/go-test-1/">
@@ -3154,11 +3154,11 @@
 <p>프로젝트 디렉토리에서 터미널을 열고, <code>go mod init {module 이름}</code>을 입력합니다. 모듈이름은 prime으로 하겠습니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">mod</span> <span class="n">init</span> <span class="n">prime</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">mod</span> <span class="n">init</span> <span class="n">prime</span>
 <span class="n">go</span><span class="err">:</span> <span class="n">creating</span> <span class="n">new</span> <span class="n">go</span><span class="p">.</span><span class="n">mod</span><span class="err">:</span> <span class="n">module</span> <span class="n">prime</span>
 </code></pre></td></tr></table>
 </div>
@@ -3167,7 +3167,7 @@
 <p>test를 위한 go 파일은 이름이 <strong>_test.go</strong>로 끝나야 합니다. 프로젝트 디렉토리에 prime_test.go라는 파일을 생성하고 다음과 같이 작성합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3177,7 +3177,7 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// prime_test.go
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// prime_test.go
 </span><span class="c1"></span><span class="kn">package</span> <span class="nx">main</span>
 
 <span class="kn">import</span> <span class="s">&#34;testing&#34;</span>
@@ -3212,7 +3212,7 @@
 <p>어떤 걸로 할지는 여러분 마음대로입니다. 저는 2를 택하겠습니다. 그러면 이런식으로 테스트 코드를 작성하면 됩니다. (1~100까지 중에 소수가 25개가 있음을 참고)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3220,7 +3220,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">TestPrime1</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">TestPrime1</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
 	<span class="nx">result</span> <span class="o">:=</span> <span class="nf">prime</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 	<span class="k">if</span> <span class="nx">result</span> <span class="o">!=</span> <span class="mi">25</span> <span class="p">{</span>
 		<span class="nx">t</span><span class="p">.</span><span class="nf">Errorf</span><span class="p">(</span><span class="s">&#34;prime(100) should be 25 but prime(100) returns %d&#34;</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span>
@@ -3232,7 +3232,7 @@
 <p>prime이 아직 정의가 안 됬습니다. prime.go 파일을 생성하고 다음과 같이 작성합시다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3240,7 +3240,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// prime.go
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// prime.go
 </span><span class="c1"></span><span class="kn">package</span> <span class="nx">main</span>
 
 <span class="kd">func</span> <span class="nf">prime</span><span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
@@ -3251,7 +3251,7 @@
 </div><p>터미널에서 <code>go test</code>를 입력하여 test를 실행할 수 있습니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3259,7 +3259,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">test</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">test</span>
 <span class="p">---</span> <span class="n">FAIL</span><span class="err">:</span> <span class="n">TestPrime1</span> <span class="p">(</span><span class="n">0</span><span class="p">.</span><span class="n">00s</span><span class="p">)</span>
     <span class="n">prime_test</span><span class="p">.</span><span class="n">go</span><span class="err">:</span><span class="n">8</span><span class="err">:</span> <span class="n">prime</span><span class="p">(</span><span class="n">100</span><span class="p">)</span> <span class="n">should</span> <span class="n">be</span> <span class="n">25</span> <span class="n">but</span> <span class="n">prime</span><span class="p">(</span><span class="n">100</span><span class="p">)</span> <span class="n">returns</span> <span class="n">0</span>
 <span class="n">FAIL</span>
@@ -3272,7 +3272,7 @@
 <p>이 글의 주된 목표는 테스트 활용이기 때문에, 이 부분은 그냥 복붙하시고 다음 장으로 넘어가도 좋습니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3302,7 +3302,7 @@
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// prime.go
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// prime.go
 </span><span class="c1"></span><span class="kn">package</span> <span class="nx">main</span>
 
 <span class="kd">func</span> <span class="nf">isPrime</span><span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">bool</span> <span class="p">{</span>
@@ -3339,13 +3339,13 @@
 <p><code>go test</code>로 테스트를 해봅시다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">test</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">test</span>
 <span class="n">PASS</span>
 <span class="n">ok</span>      <span class="n">prime</span>   <span class="n">4</span><span class="p">.</span><span class="n">891s</span>
 <span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> 

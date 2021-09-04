@@ -1083,7 +1083,7 @@
 <meta property="og:url" content="https://lyra95.github.io/docs/flask/rest-api-2/">
 <meta property="og:type" content="article">
 
-<meta name="generator" content="Hugo 0.84.3" />
+<meta name="generator" content="Hugo 0.88.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://lyra95.github.io/docs/flask/rest-api-2/">
@@ -3151,7 +3151,7 @@
     <h2 id="전체코드">전체코드</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3216,7 +3216,7 @@
 </span><span class="lnt">63
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="c1">#main.py</span>
+<pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="c1">#main.py</span>
 <span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
 <span class="kn">from</span> <span class="nn">flask_restful</span> <span class="kn">import</span> <span class="n">Api</span><span class="p">,</span> <span class="n">Resource</span><span class="p">,</span> <span class="n">reqparse</span><span class="p">,</span> <span class="n">abort</span>
 <span class="kn">from</span> <span class="nn">flask_caching</span> <span class="kn">import</span> <span class="n">Cache</span>
@@ -3285,13 +3285,13 @@
 <p>reqparse, abort, Cache를 추가로 import한다. cache가 실제로 동작하는지 확인하기 위해 time도 import했다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
 <span class="kn">from</span> <span class="nn">flask_restful</span> <span class="kn">import</span> <span class="n">Api</span><span class="p">,</span> <span class="n">Resource</span><span class="p">,</span> <span class="n">reqparse</span><span class="p">,</span> <span class="n">abort</span>
 <span class="kn">from</span> <span class="nn">flask_caching</span> <span class="kn">import</span> <span class="n">Cache</span>
 <span class="kn">import</span> <span class="nn">time</span>
@@ -3304,7 +3304,7 @@
 <p>다음과 같이 configuration을 하고 cache를 이니셜라이즈한다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3318,7 +3318,7 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 <span class="n">api</span> <span class="o">=</span> <span class="n">Api</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
 
 <span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
@@ -3344,13 +3344,13 @@
 <p>해당하는 video_id의 video가 없는데 get을 하라거나, 이미 video_id에 video가 저장되어있는데 put을 통해 새로운 video를 같은 video_id에 저장하려고하면 이상할 것이다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="c1"># exception handling</span>
+<pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="c1"># exception handling</span>
 <span class="k">def</span> <span class="nf">abort_video_not_exist</span><span class="p">(</span><span class="n">video_id</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">video_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">videos</span><span class="p">:</span>
         <span class="n">abort</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span><span class="n">message</span><span class="o">=</span><span class="s2">&#34;video doesn&#39;t exist&#34;</span><span class="p">)</span>
@@ -3361,14 +3361,14 @@
 <p>put을 위한 request parser 객체를 생성하고, field들을 추가해준다. field 이름, 타입, 헬프메시지(옵션), required 순이다. required=True로 설정함으로써, 모든 필드값이 주어진 요청만 valid하게 설정했다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="c1"># request parser</span>
+<pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="c1"># request parser</span>
 <span class="n">videos_put_args</span> <span class="o">=</span> <span class="n">reqparse</span><span class="o">.</span><span class="n">RequestParser</span><span class="p">()</span>
 <span class="n">videos_put_args</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&#34;name&#34;</span><span class="p">,</span><span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name of the video&#39;</span><span class="p">,</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">videos_put_args</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&#34;views&#34;</span><span class="p">,</span><span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Views of the video&#39;</span><span class="p">,</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -3378,7 +3378,7 @@
 </div><p>이제 다음과 같이 파서를 활용할 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3389,7 +3389,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="k">class</span> <span class="nc">Video</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span> 
+<pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="k">class</span> <span class="nc">Video</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span> 
     
     <span class="c1">#중략</span>
     
@@ -3405,7 +3405,7 @@
 <p>다음과 같이 put/get 요청을 테스트해볼 수 있다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3416,7 +3416,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="c1">#test.py</span>
+<pre tabindex="0" class="chroma"><code class="language-python3" data-lang="python3"><span class="c1">#test.py</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="n">BASE</span> <span class="o">=</span> <span class="s2">&#34;http://127.0.0.1:5000/&#34;</span>
@@ -3429,12 +3429,12 @@
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="nb">flask-rest</span><span class="n">-api-tuto</span><span class="p">&gt;</span> <span class="n">python</span> <span class="n">test</span><span class="p">.</span><span class="n">py</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="nb">flask-rest</span><span class="n">-api-tuto</span><span class="p">&gt;</span> <span class="n">python</span> <span class="n">test</span><span class="p">.</span><span class="n">py</span>
 <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="err">:</span> <span class="s1">&#39;ByeWorld&#39;</span><span class="p">,</span> <span class="s1">&#39;views&#39;</span><span class="err">:</span> <span class="n">11</span><span class="p">,</span> <span class="s1">&#39;likes&#39;</span><span class="err">:</span> <span class="n">2</span><span class="p">}</span>
 <span class="p">[{</span><span class="s1">&#39;name&#39;</span><span class="err">:</span> <span class="s1">&#39;ByeWorld&#39;</span><span class="p">,</span> <span class="s1">&#39;views&#39;</span><span class="err">:</span> <span class="n">11</span><span class="p">,</span> <span class="s1">&#39;likes&#39;</span><span class="err">:</span> <span class="n">2</span><span class="p">}]</span>
 </code></pre></td></tr></table>

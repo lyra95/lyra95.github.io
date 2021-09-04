@@ -1083,7 +1083,7 @@
 <meta property="og:url" content="https://lyra95.github.io/docs/go/go-test-2/">
 <meta property="og:type" content="article">
 
-<meta name="generator" content="Hugo 0.84.3" />
+<meta name="generator" content="Hugo 0.88.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://lyra95.github.io/docs/go/go-test-2/">
@@ -3152,7 +3152,7 @@
 <p>그냥 Test 함수를 여러개 작성하면 됩니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3182,7 +3182,7 @@
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// prime_test.go
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// prime_test.go
 </span><span class="c1"></span><span class="kd">func</span> <span class="nf">TestPrimeZero</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
 	<span class="nx">result</span> <span class="o">:=</span> <span class="nf">prime</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 	<span class="k">if</span> <span class="nx">result</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">{</span>
@@ -3216,13 +3216,13 @@
 <p><code>go test -run {테스트이름}</code>으로 일부 테스트만 실행할 수 있습니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">test</span> <span class="n">-run</span> <span class="n">Prime1000</span> 
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">test</span> <span class="n">-run</span> <span class="n">Prime1000</span> 
 <span class="n">PASS</span>
 <span class="n">ok</span>      <span class="n">prime</span>   <span class="n">4</span><span class="p">.</span><span class="n">289s</span>
 <span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> 
@@ -3240,7 +3240,7 @@
 <p>t.Fail()을 이용할 시에는 실패 메시지 출력을 위해 t.Log() 나 t.Logf()를 활용하세요. t.Fail() 플래그가 셋되면(=테스트가 실패하면) 메시지가 출력됩니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3279,7 +3279,7 @@
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// prime_test.go
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// prime_test.go
 </span><span class="c1"></span><span class="kd">func</span> <span class="nf">TestFail</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
 	<span class="nx">t</span><span class="p">.</span><span class="nf">Fail</span><span class="p">()</span>
 	<span class="nx">t</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">&#34;this test must fail&#34;</span><span class="p">)</span>
@@ -3321,7 +3321,7 @@
 </div><p>테스트를 해봅시다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3330,7 +3330,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">test</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">test</span>
 <span class="p">---</span> <span class="n">FAIL</span><span class="err">:</span> <span class="n">TestFail</span> <span class="p">(</span><span class="n">0</span><span class="p">.</span><span class="n">00s</span><span class="p">)</span>
     <span class="n">prime_test</span><span class="p">.</span><span class="n">go</span><span class="err">:</span><span class="n">7</span><span class="err">:</span> <span class="n">this</span> <span class="n">test</span> <span class="n">must</span> <span class="n">fail</span>
 <span class="n">FAIL</span>
@@ -3343,7 +3343,7 @@
 <p><code>go test -v</code>를 실행시켜 봅시다 (verbose의 v입니다.)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3360,7 +3360,7 @@
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">PS</span> <span class="nx">C</span><span class="p">:</span><span class="err">\</span><span class="nx">dev</span><span class="err">\</span><span class="nx">goproject</span><span class="err">\</span><span class="nx">prime</span><span class="p">&gt;</span> <span class="k">go</span> <span class="nx">test</span> <span class="o">-</span><span class="nx">v</span>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="nx">PS</span> <span class="nx">C</span><span class="p">:</span><span class="err">\</span><span class="nx">dev</span><span class="err">\</span><span class="nx">goproject</span><span class="err">\</span><span class="nx">prime</span><span class="p">&gt;</span> <span class="k">go</span> <span class="nx">test</span> <span class="o">-</span><span class="nx">v</span>
 <span class="o">==</span><span class="p">=</span> <span class="nx">RUN</span>   <span class="nx">TestFail</span>
     <span class="nx">prime_test</span><span class="p">.</span><span class="k">go</span><span class="p">:</span><span class="mi">7</span><span class="p">:</span> <span class="nx">this</span> <span class="nx">test</span> <span class="nx">must</span> <span class="nx">fail</span>
 <span class="o">---</span> <span class="nx">FAIL</span><span class="p">:</span> <span class="nf">TestFail</span> <span class="p">(</span><span class="mf">0.00</span><span class="nx">s</span><span class="p">)</span>
@@ -3384,7 +3384,7 @@
 <p><code>assert.Equal(참값, 결과값, 실패시 메시지)</code> 함수로 더 간결하게 코드를 작성할 수 있습니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3397,7 +3397,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
 
 <span class="kn">import</span> <span class="p">(</span>
 	<span class="s">&#34;testing&#34;</span>
@@ -3413,13 +3413,13 @@
 </div><p>실패시 어떻게 메시지가 출력되나 보기 위해 TestPrime100을 조금 바꿔봅니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">TestPrime100</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">TestPrime100</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
 	<span class="nx">assert</span> <span class="o">:=</span> <span class="nx">assert</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="nx">t</span><span class="p">)</span>
 	<span class="nx">assert</span><span class="p">.</span><span class="nf">Equal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nf">prime</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="s">&#34;prime(100) should be 0&#34;</span> <span class="p">)</span>
 <span class="p">}</span>
@@ -3428,7 +3428,7 @@
 </div><p>테스트 실행 시 다음과 같이 상세하게 알려줍니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3449,7 +3449,7 @@
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">test</span> <span class="n">-v</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">test</span> <span class="n">-v</span>
 <span class="p">===</span> <span class="n">RUN</span>   <span class="n">TestPrime100</span>
     <span class="n">prime_test</span><span class="p">.</span><span class="n">go</span><span class="err">:</span><span class="n">11</span><span class="err">:</span> 
                 <span class="n">Error</span> <span class="n">Trace</span><span class="err">:</span>    <span class="n">prime_test</span><span class="p">.</span><span class="n">go</span><span class="err">:</span><span class="n">11</span>

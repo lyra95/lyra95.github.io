@@ -1083,7 +1083,7 @@
 <meta property="og:url" content="https://lyra95.github.io/docs/go/go-goroutine/">
 <meta property="og:type" content="article">
 
-<meta name="generator" content="Hugo 0.84.3" />
+<meta name="generator" content="Hugo 0.88.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://lyra95.github.io/docs/go/go-goroutine/">
@@ -3155,7 +3155,7 @@
 <p><code>go foo()</code>로 고루틴(스레드)를 생성함과 동시에 생성된 고루틴에서 foo() 함수가 수행됩니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3167,7 +3167,7 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">foo</span><span class="p">()</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">foo</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="s">&#34;Hi from new Go routine&#34;</span><span class="p">)</span>
 <span class="p">}</span>
 
@@ -3185,7 +3185,7 @@
 <p>이 프로그램을 실행하면 어떻게 될까요?</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3194,7 +3194,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">\</span><span class="n">test</span><span class="p">&gt;</span> <span class="p">./</span><span class="n">test</span><span class="p">.</span><span class="n">exe</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">\</span><span class="n">test</span><span class="p">&gt;</span> <span class="p">./</span><span class="n">test</span><span class="p">.</span><span class="n">exe</span>
 <span class="n">Hi</span> <span class="n">from</span> <span class="n">Go</span> <span class="n">routine</span> <span class="n">main</span>
 <span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">\</span><span class="n">test</span><span class="p">&gt;</span> <span class="p">./</span><span class="n">test</span><span class="p">.</span><span class="n">exe</span>
 <span class="n">Hi</span> <span class="n">from</span> <span class="n">new</span> <span class="n">Go</span> <span class="n">routine</span>
@@ -3210,7 +3210,7 @@
 <p>한가지 답은 <strong>WaitGroup</strong> 오브젝트입니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3235,7 +3235,7 @@
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
 
 <span class="kn">import</span> <span class="p">(</span>
 	<span class="s">&#34;fmt&#34;</span>
@@ -3266,7 +3266,7 @@
 <p>프로그램을 실행해 봅시다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3278,7 +3278,7 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">\</span><span class="n">test</span><span class="p">&gt;</span> <span class="p">./</span><span class="n">test</span><span class="p">.</span><span class="n">exe</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">\</span><span class="n">test</span><span class="p">&gt;</span> <span class="p">./</span><span class="n">test</span><span class="p">.</span><span class="n">exe</span>
 <span class="n">Hi</span> <span class="n">from</span> <span class="n">new</span> <span class="n">Go</span> <span class="n">routine</span>
 <span class="n">Hi</span> <span class="n">from</span> <span class="n">Go</span> <span class="n">routine</span> <span class="n">main</span>
 <span class="n">Hi</span> <span class="n">from</span> <span class="n">new</span> <span class="n">Go</span> <span class="n">routine</span>
@@ -3294,7 +3294,7 @@
 <p>간단합니다. wg.Wait()과 fmt.Print()의 순서를 바꿔주면 됩니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3320,7 +3320,7 @@
 </span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
 
 <span class="kn">import</span> <span class="p">(</span>
 	<span class="s">&#34;fmt&#34;</span>
@@ -3349,7 +3349,7 @@
 </div><p>이제 프로그램을 실행해보면 Hi from Go routine main이 마지막에 출력됩니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3361,7 +3361,7 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">\</span><span class="n">test</span><span class="p">&gt;</span> <span class="p">./</span><span class="n">test</span><span class="p">.</span><span class="n">exe</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">dev</span><span class="p">\</span><span class="n">goproject</span><span class="p">\</span><span class="n">prime</span><span class="p">\</span><span class="n">test</span><span class="p">&gt;</span> <span class="p">./</span><span class="n">test</span><span class="p">.</span><span class="n">exe</span>
 <span class="n">Hi</span> <span class="n">from</span> <span class="n">new</span> <span class="n">Go</span> <span class="n">routine</span>
 <span class="n">Hi</span> <span class="n">from</span> <span class="n">new</span> <span class="n">Go</span> <span class="n">routine</span>
 <span class="n">Hi</span> <span class="n">from</span> <span class="n">new</span> <span class="n">Go</span> <span class="n">routine</span>

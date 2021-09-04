@@ -1083,7 +1083,7 @@
 <meta property="og:url" content="https://lyra95.github.io/docs/mysqltutorial/mysql-4/">
 <meta property="og:type" content="article">
 
-<meta name="generator" content="Hugo 0.84.3" />
+<meta name="generator" content="Hugo 0.88.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://lyra95.github.io/docs/mysqltutorial/mysql-4/">
@@ -3154,7 +3154,7 @@
 <p><a href="/docs/mysqltutorial/mysql-3/">이전 포스트</a>에서 topic 테이블을 생성하고 레코드들을 추가했습니다.<!--path dependency--></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3167,7 +3167,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------------------+---------------------+--------+--------------------------+
 </span><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">title</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">description</span><span class="w">        </span><span class="o">|</span><span class="w"> </span><span class="n">created</span><span class="w">             </span><span class="o">|</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">profile</span><span class="w">                  </span><span class="o">|</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------------------+---------------------+--------+--------------------------+
@@ -3184,7 +3184,7 @@
 <p><a href="https://dev.mysql.com/doc/refman/8.0/en/select.html" target="_blank">MySQL doc</a>을 참고하면, SELECT의 정확한 문법은 다음과 같습니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3218,7 +3218,7 @@
 </span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span><span class="w">
 </span><span class="w">    </span><span class="p">[</span><span class="k">ALL</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">DISTINCTROW</span><span class="w"> </span><span class="p">]</span><span class="w">
 </span><span class="w">    </span><span class="p">[</span><span class="n">HIGH_PRIORITY</span><span class="p">]</span><span class="w">
 </span><span class="w">    </span><span class="p">[</span><span class="n">STRAIGHT_JOIN</span><span class="p">]</span><span class="w">
@@ -3264,7 +3264,7 @@
 <p>예를 들어 title, author, profile만 보고 싶다면 다음과 같이 SELECT를 활용합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3277,7 +3277,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">------------+--------+--------------------------+
 </span><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">title</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">profile</span><span class="w">                  </span><span class="o">|</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">------------+--------+--------------------------+
@@ -3293,7 +3293,7 @@
 </div><p>*를 활용하면 모든 attribute를 볼 수 있습니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3306,7 +3306,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------------------+---------------------+--------+--------------------------+
 </span><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">title</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">description</span><span class="w">        </span><span class="o">|</span><span class="w"> </span><span class="n">created</span><span class="w">             </span><span class="o">|</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">profile</span><span class="w">                  </span><span class="o">|</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------------------+---------------------+--------+--------------------------+
@@ -3323,7 +3323,7 @@
 <p>예를 들어 author값의 내림차순으로 보고 싶다면 다음과 같이 커맨드를 입력합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3336,7 +3336,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">author</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">author</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------+--------------------------+
 </span><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">title</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">profile</span><span class="w">                  </span><span class="o">|</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------+--------------------------+
@@ -3352,7 +3352,7 @@
 </div><p>오름차순으로 보고 싶다면 author 뒤에 DESC를 추가합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3365,7 +3365,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------+--------------------------+
 </span><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">title</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">profile</span><span class="w">                  </span><span class="o">|</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------+--------------------------+
@@ -3381,7 +3381,7 @@
 </div><p>약간의 응용을 해서, <strong>author를 기준으로 내림차순</strong>하면서, 같은 author의 경우 <strong>id를 기준으로 오름차순</strong>하려면 다음과 같이 하면 됩니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3394,7 +3394,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">author</span><span class="p">,</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">author</span><span class="p">,</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------+--------------------------+
 </span><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">title</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">profile</span><span class="w">                  </span><span class="o">|</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------+--------------------------+
@@ -3411,7 +3411,7 @@
 <p>author가 egoing인 것만 보려면 <code>WHERE author='egoing'</code>을 추가하면 됩니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3422,7 +3422,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">author</span><span class="o">=</span><span class="s1">&#39;egoing&#39;</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">author</span><span class="o">=</span><span class="s1">&#39;egoing&#39;</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+---------+--------+-----------+
 </span><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">title</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">profile</span><span class="w">   </span><span class="o">|</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+---------+--------+-----------+
@@ -3436,7 +3436,7 @@
 </div><p>id 내림차순으로 보려면 ORDER를 WHERE 다음에 추가해야합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3447,7 +3447,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">author</span><span class="o">=</span><span class="s1">&#39;egoing&#39;</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">author</span><span class="p">,</span><span class="n">profile</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">author</span><span class="o">=</span><span class="s1">&#39;egoing&#39;</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+---------+--------+-----------+
 </span><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">title</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">profile</span><span class="w">   </span><span class="o">|</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+---------+--------+-----------+
@@ -3461,7 +3461,7 @@
 </div><p><code>WHERE {조건문}</code>으로 다양한 조건을 걸 수 있습니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -3473,7 +3473,7 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">created</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2020-01-01&#39;</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">created</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2020-01-01&#39;</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------------------+---------------------+--------+--------------------------+
 </span><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">title</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">description</span><span class="w">        </span><span class="o">|</span><span class="w"> </span><span class="n">created</span><span class="w">             </span><span class="o">|</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">profile</span><span class="w">                  </span><span class="o">|</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+--------------------+---------------------+--------+--------------------------+
@@ -3490,7 +3490,7 @@
 <p>몇 개만 찾고 끝내고 싶다면 <code>LIMIT {숫자}</code> 키워드를 이용하세요.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3500,7 +3500,7 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">created</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2020-01-01&#39;</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">created</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2020-01-01&#39;</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+------------------+---------------------+--------+------------------------+
 </span><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">title</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">description</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">created</span><span class="w">             </span><span class="o">|</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">profile</span><span class="w">                </span><span class="o">|</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">----+------------+------------------+---------------------+--------+------------------------+
@@ -3514,7 +3514,7 @@
 <p>doc을 보면 FROM이 생략가능하다고 나옵니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -3523,7 +3523,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Hi, ...&#39;</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Hi, ...&#39;</span><span class="p">;</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">-----+---------+
 </span><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Hi</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="o">|</span><span class="w">
 </span><span class="w"></span><span class="o">+</span><span class="c1">-----+---------+
