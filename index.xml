@@ -60,6 +60,16 @@
       </item>
       
       <item>
+        <title>.gitignore 대신 exclude로 로컬에서만 파일 무시하기</title>
+        <link>https://lyra95.github.io/docs/git/exclude/</link>
+        <pubDate>Sat, 04 Sep 2021 16:57:23 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/git/exclude/</guid>
+        <description>무시할 파일 리스트를 .git/info/exclude에 추가한다
+공유되는 .gitignore를 건드리지 않으면서 이그노어 가능</description>
+      </item>
+      
+      <item>
         <title>package-json.lock이 뭘까</title>
         <link>https://lyra95.github.io/docs/nodejs/honey-tip/</link>
         <pubDate>Sat, 04 Sep 2021 16:52:14 +0900</pubDate>
