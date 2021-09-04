@@ -60,6 +60,16 @@
       </item>
       
       <item>
+        <title>package-json.lock이 뭘까</title>
+        <link>https://lyra95.github.io/docs/nodejs/honey-tip/</link>
+        <pubDate>Sat, 04 Sep 2021 16:52:14 +0900</pubDate>
+        
+        <guid>https://lyra95.github.io/docs/nodejs/honey-tip/</guid>
+        <description>package 적용할 버젼을 더 엄격하게 적용할 때 사용함
+package-lock.json이 있다면 npm install 대신 npm ci를 하자</description>
+      </item>
+      
+      <item>
         <title>Flask로 Restful Api (1): 기본 API</title>
         <link>https://lyra95.github.io/docs/flask/rest-api-1/</link>
         <pubDate>Fri, 11 Jun 2021 18:31:49 +0900</pubDate>
