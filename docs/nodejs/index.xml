@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ZDoc</title>
+    <title>Nodejs on ZDoc</title>
     <link>https://lyra95.github.io/docs/nodejs/</link>
-    <description>Recent content on ZDoc</description>
+    <description>Recent content in Nodejs on ZDoc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 04 Sep 2021 16:52:14 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 00:34:39 +0900</lastBuildDate>
     
         <atom:link href="https://lyra95.github.io/docs/nodejs/index.xml" rel="self" type="application/rss+xml" />
     
