@@ -80,20 +80,6 @@ package-lock.json이 있다면 npm install 대신 npm ci를 하자</description>
       </item>
       
       <item>
-        <title>Flask로 Restful Api (1): 기본 API</title>
-        <link>https://lyra95.github.io/docs/flask/rest-api-1/</link>
-        <pubDate>Fri, 11 Jun 2021 18:31:49 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/flask/rest-api-1/</guid>
-        <description>Restful Api란? 특정 약속으로 정해놓은 server-client application 규약이다.
-HTTP( or HTTPS) 통신을 이용하여 server와 client간 데이터를 주고받는다.
-보통 4가지 오퍼레이션이 있다: get, put, post, delete. 각각 Read, Update, Create, Delete에 대응된다고 보면된다.
-예를들어서, 학생들 성적을 관리하는 서버가 있다고 치자. 1번 학생의 성적을 보고 싶다면 get https://{서버주소}/students/1 이런식으로 요청한다. 무엇을 하려고 하는지 링크(URI)자체로 설명이 되고 있다.
-그외에도 stateless, cache 등등 여러가지 규약이 있는데, (https://restfulapi.net/)[https://restfulapi.net/]를 참고하는게 더 좋을 것이다.
-간단한 server-client application을 쉽게 찍어내기 위한 설계도라고 이해하면 될 것 같다.</description>
-      </item>
-      
-      <item>
         <title>Linux command</title>
         <link>https://lyra95.github.io/docs/git/linux_command/</link>
         <pubDate>Thu, 20 May 2021 21:44:11 +0900</pubDate>
@@ -170,23 +156,6 @@ https://developercommunity.visualstudio.com/t/error-c2760-in-combaseapih-with-wi
       </item>
       
       <item>
-        <title>Pytorch Install (local)</title>
-        <link>https://lyra95.github.io/docs/ml/install-local/</link>
-        <pubDate>Mon, 10 May 2021 16:45:27 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/ml/install-local/</guid>
-        <description>가이드대로 차근차근 따라한다. (Windows 10 64bits)
-Prerequisites   python 3.xx가 설치 되었는가?
-터미널에서 python으로 버젼 확인 가능
-  pip3가 설치되었는가?
-터미널에서 pip3를 실행해서 확인
-  CUDA가 설치되었는가?
- CUDA가 지원되는 GPU인가? CUDA ver. 10.x or 11.x?    Install 가이드 링크 상단 참조
-Check pytorch 설치 확인
-1 2 3 4 5 6 7 8 9 10 11  PS C:\Windows\system32&amp;gt; python Python 3.9.4 (tags/v3.9.4:1f2e308, Apr 6 2021, 13:40:21) [MSC v.</description>
-      </item>
-      
-      <item>
         <title>aws EC2 server instance 생성</title>
         <link>https://lyra95.github.io/docs/aws/ec2-1/</link>
         <pubDate>Sun, 09 May 2021 22:50:44 +0900</pubDate>
@@ -226,32 +195,6 @@ Create a key pair 스텝을 진행하는 과정에서, 다음과 같은 설명�
       </item>
       
       <item>
-        <title>(1) : Install and Start Server</title>
-        <link>https://lyra95.github.io/docs/mysqltutorial/mysql-1/</link>
-        <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/mysqltutorial/mysql-1/</guid>
-        <description>Installation 설치 환경: Windows 10 64bit
-통합 패키지 wamp를 받습니다.(파일명 bitnami-wampstack-8.0.5-0-windows-x64-installer)
-Component는 모두 선택합니다.
- php 관련 framework등 지금은 필요없는 구성들이 있지만, 일단은 선택합니다.
- 설치경로를 기억해둡시다. (필자의 경우 C:\Bitnami\wampstack-8.0.5-0)
-root 어카운트 비밀번호는 아무거나 설정합니다.
- 단순 개인 프로젝트라면 111111같은 비번도 괜찮겠지만, 보안이 중요하다면 복잡한 비밀번호로 설정하세요
- cloud는 필요없으니 선택하지 않습니다.
- Mac, Linux 같은 다른 OS의 경우, 혹은 현재 instruction을 따라하기 힘든 경우, 필자가 참고한 생활코딩1 영상이나 다른 정보를 활용하세요.</description>
-      </item>
-      
-      <item>
-        <title>Flask로 Restful Api (2): reqparse로 요청 파싱하기</title>
-        <link>https://lyra95.github.io/docs/flask/rest-api-2/</link>
-        <pubDate>Fri, 11 Jun 2021 18:31:49 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/flask/rest-api-2/</guid>
-        <description>전체코드 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63  #main.py from flask import Flask from flask_restful import Api, Resource, reqparse, abort from flask_caching import Cache import time app = Flask(__name__) api = Api(app) config = { &amp;#34;DEBUG&amp;#34;: True, # some Flask specific configs &amp;#34;CACHE_TYPE&amp;#34;: &amp;#34;SimpleCache&amp;#34;, # Flask-Caching related configs &amp;#34;CACHE_DEFAULT_TIMEOUT&amp;#34;: 300 } app.</description>
-      </item>
-      
-      <item>
         <title>if __name__ == &#39;__main__&#39;: 이 뭘까</title>
         <link>https://lyra95.github.io/docs/python/python2/</link>
         <pubDate>Sat, 15 May 2021 16:13:15 +0900</pubDate>
@@ -261,17 +204,6 @@ root 어카운트 비밀번호는 아무거나 설정합니다.
 자세히 알아보기 위해 main.py랑 hello.py가 다음과 같이 있다 치자.
 1 2 3 4  #hello.py def foo(): print(&amp;#34;hello.py : &amp;#34; + __name__) foo()   1 2 3 4  #main.py import &amp;#34;hello.py&amp;#34; print(&amp;#34;main.py : &amp;#34; + __name__)   main.py를 실행하면 다음과 같다.
 1 2 3  PS C:\dev\ml&amp;gt; &amp;amp; &amp;#34;C:/Program Files/Python39/python.exe&amp;#34; c:/dev/ml/main.py hello.py : hello main.py : __main__   hello.</description>
-      </item>
-      
-      <item>
-        <title>Pytorch Install (Cloud) (draft)</title>
-        <link>https://lyra95.github.io/docs/ml/install-cloud.md/</link>
-        <pubDate>Mon, 10 May 2021 16:45:27 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/ml/install-cloud.md/</guid>
-        <description>AWS의 GPU instance 가격정책이 너무 비싼듯하여 google cloud를 시도하는데, (aws: 아무튼 비쌈/google: t4 tesla 0.35usd/hour)
-seoul region에는 gpu instace 서비스가 안되고 iowa region을 골랐더니 instance 이니셜라이제이션이 안되고 있다&amp;hellip;
-좀 더 알아본 후 상세히 포스팅하겠음.</description>
       </item>
       
       <item>
@@ -301,17 +233,6 @@ switch MS docs
       </item>
       
       <item>
-        <title>(2) : Tutorial</title>
-        <link>https://lyra95.github.io/docs/mysqltutorial/mysql-2/</link>
-        <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/mysqltutorial/mysql-2/</guid>
-        <description>이전 포스트를 참고하여 mysql을 실행합니다.생활코딩에서 MySQL의 전체적인 구조를 보고오면 이해에 도움이 될 것 입니다.
-Database 목록 보기 현재 database 목록을 보기 위해 SHOW DATABASES; 커맨드를 입력합니다.
-1 2 3 4 5 6 7 8 9 10 11 12  mysql&amp;gt;SHOWDATABASES;+--------------------+ |Database|+--------------------+ |information_schema||mysql||performance_schema||sys|+--------------------+ 4rowsinset(0.01sec)mysql&amp;gt;    mysql 명령문은 case sensetive하지 않습니다. show databases;를 입력하더라도 같은 결과를 보여줄 것입니다. 하지만 convention에 따라, 사용자가 지정한 이름은 소문자로, 그외는 대문자로 써서 알아보기 편하게 합시다.</description>
-      </item>
-      
-      <item>
         <title>VScode &#39;cl.exe&#39; is not recognized error</title>
         <link>https://lyra95.github.io/docs/configurations/cl-exe-setting/</link>
         <pubDate>Sun, 02 May 2021 17:39:41 +0900</pubDate>
@@ -321,15 +242,6 @@ Database 목록 보기 현재 database 목록을 보기 위해 SHOW DATABASES; �
 windows 10 64bit
 build 시 다음과 같은 에러메세지
 1 2 3 4 5 6 7 8 9  Starting build... cl.exe /Zi /EHsc /nologo /Fe: C:\dev\codejam\strikeBall.exe C:\dev\codejam\strikeBall.cpp &amp;#39;cl.exe&amp;#39; is not recognized as an internal or external command, operable program or batch file. Build finished with error(s). The terminal process failed to launch (exit code: -1). Terminal will be reused by tasks, press any key to close it.</description>
-      </item>
-      
-      <item>
-        <title>Flask로 Restful Api (3): 캐시 설정하기</title>
-        <link>https://lyra95.github.io/docs/flask/rest-api-3/</link>
-        <pubDate>Fri, 11 Jun 2021 18:31:49 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/flask/rest-api-3/</guid>
-        <description>전체코드 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63  #main.py from flask import Flask from flask_restful import Api, Resource, reqparse, abort from flask_caching import Cache import time app = Flask(__name__) api = Api(app) config = { &amp;#34;DEBUG&amp;#34;: True, # some Flask specific configs &amp;#34;CACHE_TYPE&amp;#34;: &amp;#34;SimpleCache&amp;#34;, # Flask-Caching related configs &amp;#34;CACHE_DEFAULT_TIMEOUT&amp;#34;: 300 } app.</description>
       </item>
       
       <item>
@@ -358,19 +270,6 @@ build 시 다음과 같은 에러메세지
       </item>
       
       <item>
-        <title>Loading MNIST data : Pytorch tutorial (1)</title>
-        <link>https://lyra95.github.io/docs/ml/mnist/</link>
-        <pubDate>Tue, 11 May 2021 14:51:01 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/ml/mnist/</guid>
-        <description>pytorch 튜토리얼 코스를 참고했다.
-전체 코드 링크를 새탭에서 열고 ctr+s해서 저장가능.
-주피터 노트북 파일(.ipynb)
-device 선택 gpu/cpu 먼저 cpu와 gpu중 device를 선택한다. gpu가 있고 cuda가 설치되어 있으면 cuda를 사용하고, 아니면 cpu를 사용한다.
-1 2 3  import torch device = &amp;#39;cuda&amp;#39; if torch.cuda.is_available() else &amp;#39;cpu&amp;#39; #print(&amp;#39;Using {} device&amp;#39;.format(device)) 로 device 확인가능   MNIST 데이터 가져오기 본디 MNIST는 28*28 사이즈의 흑백으로된 0~9 숫자 손글씨 이미지 데이터다. 근데 지금와서는 일종의 프로토콜처럼 사용되고 있다.</description>
-      </item>
-      
-      <item>
         <title>vs code remote:ssh로 ec2 접속</title>
         <link>https://lyra95.github.io/docs/aws/ec2-3/</link>
         <pubDate>Mon, 10 May 2021 19:36:40 +0900</pubDate>
@@ -380,18 +279,6 @@ device 선택 gpu/cpu 먼저 cpu와 gpu중 device를 선택한다. gpu가 있고
 왼쪽 탭에 remote explore라고 새로운 탭이 생긴다. ssh targets에 아직 아무것도 없다.
 톱니바퀴를 눌러서 config파일을 눌러서 다음과 같이 내용을 수정했다.
 1 2 3 4 5  # Read more about SSH config files: https://linux.die.net/man/5/ssh_config Host {아무거나 display할 이름} HostName {ec2 인스턴스의 dns나 ipv4} User ec2-user IdentityFile {key pair pem 파일 경로}   error: The process tried to write to a nonexistent pipe config 파일 경로가 c:\users\{유저이름}\.</description>
-      </item>
-      
-      <item>
-        <title>(3) : CRUD commands</title>
-        <link>https://lyra95.github.io/docs/mysqltutorial/mysql-3/</link>
-        <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/mysqltutorial/mysql-3/</guid>
-        <description>본 항목은 생활코딩을 참고하였습니다.
- CRUD란 Create, Read, Update, Delete의 앞글자만 따온 것으로, 데이터베이스의 기본 기능들입니다. sql이라는 언어가 이런 기능들을 어떤 문법으로 지원하는지 봅시다.
-이전 포스트에서 tutorial database에 접속했습니다.다음과 같은 정보들이 있다고 합시다:
-   id title description created author profile     1 MySQL MySQL is &amp;hellip; 2018-01-10 egoing developer   2 ORACLE Oracle is &amp;hellip; 2018-01-15 egoing developer   3 SQL Server SQL Server is &amp;hellip; 2018-01-18 duru database administrator   4 PostgreSQL PostgreSQL is &amp;hellip; 2018-01-20 taeho data scientist, developer   5 MongoDB MongoDB is &amp;hellip; 2018-01-30 egoing developer    이 정보들을 sql을 통해 데이터베이스에 저장하려고 합니다.</description>
       </item>
       
       <item>
@@ -408,15 +295,6 @@ test go 파일 생성/작성 test를 위한 go 파일은 이름이 _test.go로 �
       </item>
       
       <item>
-        <title>Flask로 Restful Api (4): sqlAlchemy로 DB와 연동하기</title>
-        <link>https://lyra95.github.io/docs/flask/rest-api-4/</link>
-        <pubDate>Fri, 11 Jun 2021 18:31:49 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/flask/rest-api-4/</guid>
-        <description>전체코드 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83  # main.</description>
-      </item>
-      
-      <item>
         <title>CLI argument parsing : argparse</title>
         <link>https://lyra95.github.io/docs/python/argparse/</link>
         <pubDate>Sun, 16 May 2021 17:28:58 +0900</pubDate>
@@ -426,19 +304,6 @@ test go 파일 생성/작성 test를 위한 go 파일은 이름이 _test.go로 �
 CLI에서 python main.py -op sum 1 2 3이런 식으로 프로그램에 인풋을 주고 싶다고 하자. (결과는 6을 출력하도록)
 sum, mul 함수 작성 (skip) 일단 argparse랑은 상관 없는 sum,mul함수를 작성한다.
 1 2 3 4 5 6 7 8 9 10 11 12  #main.py def sum(args): temp = 0 for num in args: temp += int(num) return temp def mul(args): temp = 1 for num in args: temp *= int(num) return temp   ArgumentParser 다음과 같이 ArgumentParser 오브젝트를 생성한다.</description>
-      </item>
-      
-      <item>
-        <title>Network, Save &amp; Load : Pytorch tutorial (2)</title>
-        <link>https://lyra95.github.io/docs/ml/mnist2/</link>
-        <pubDate>Tue, 11 May 2021 14:51:01 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/ml/mnist2/</guid>
-        <description>저번 포스트에서 이어서&amp;hellip;
-이미지 데이터 한 개는(레이블 제외) 1*28*28 사이즈를 갖는다.
-batch_size=64이므로 한 번에 64*1*28*28 사이즈의 텐서가 모델에 들어간다.
-Network Architecture 설정하기 nn.Module을 상속받는 클래스를 생성하고, __init__, __foward__를 구현해서 모델 아키텍쳐를 설정할 수 있다.
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  from torch import nn class NeuralNetwork(nn.Module): def __init__(self): super(NeuralNetwork, self).__init__() self.flatten = nn.Flatten() self.linear_relu_stack = nn.Sequential( nn.Linear(28*28, 512), nn.</description>
       </item>
       
       <item>
@@ -453,18 +318,6 @@ mathjax_support.html 생성 먼저 mathjax를 로딩해주는 html 파일을 작
       </item>
       
       <item>
-        <title>(4) : CRUD commands, SELECT</title>
-        <link>https://lyra95.github.io/docs/mysqltutorial/mysql-4/</link>
-        <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/mysqltutorial/mysql-4/</guid>
-        <description>본 항목은 생활코딩을 참고하였습니다.
- 이전 포스트에서 topic 테이블을 생성하고 레코드들을 추가했습니다.1 2 3 4 5 6 7 8 9 10 11  mysql&amp;gt;SELECT*FROMtopic;+----+------------+--------------------+---------------------+--------+--------------------------+ |id|title|description|created|author|profile|+----+------------+--------------------+---------------------+--------+--------------------------+ |1|MySQL|MySQLis...|2018-01-1000:00:00|egoing|developer||2|ORACLE|Oracleis...|2021-05-0618:17:04|egoing|developer||3|SQLServer|SQLServeris...|2021-05-0618:27:09|duru|databaseadministrator||4|PostgreSQL|PostgreSQLis...|2021-05-0618:27:24|taeho|datascientist,developer||5|MongoDB|MongoDBis...|2021-05-0618:27:43|egoing|developer|+----+------------+--------------------+---------------------+--------+--------------------------+ 5rowsinset(0.00sec)  아마 대부분의 경우, 데이터베이스/테이블을 생성하거나 레코드를 추가하거나 하는 일은 많이 없습니다. 하지만 SELECT를 적절히 활용해 원하는 데이터를 찾아야할 일은 많이 있을 겁니다.
-MySQL doc을 참고하면, SELECT의 정확한 문법은 다음과 같습니다.
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  SELECT[ALL|DISTINCT|DISTINCTROW][HIGH_PRIORITY][STRAIGHT_JOIN][SQL_SMALL_RESULT][SQL_BIG_RESULT][SQL_BUFFER_RESULT][SQL_NO_CACHE][SQL_CALC_FOUND_ROWS]select_expr[,select_expr].</description>
-      </item>
-      
-      <item>
         <title>(1)-2 : golang test</title>
         <link>https://lyra95.github.io/docs/go/go-test-2/</link>
         <pubDate>Sun, 25 Apr 2021 18:18:20 +0900</pubDate>
@@ -472,31 +325,6 @@ MySQL doc을 참고하면, SELECT의 정확한 문법은 다음과 같습니다.
         <guid>https://lyra95.github.io/docs/go/go-test-2/</guid>
         <description>테스트 여러개 생성 그냥 Test 함수를 여러개 작성하면 됩니다.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  // prime_test.go func TestPrimeZero(t *testing.T) { result := prime(0) if result != 0 { t.Errorf(&amp;#34;prime(0) should be 0 but prime(0) returns %d&amp;#34;, result) } } func TestPrimeNegative(t *testing.T) { result := prime(-100) if result !</description>
-      </item>
-      
-      <item>
-        <title>Migration to Pytorch Lightning : Pytorch tutorial (3)</title>
-        <link>https://lyra95.github.io/docs/ml/mnist3/</link>
-        <pubDate>Tue, 11 May 2021 14:51:01 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/ml/mnist3/</guid>
-        <description>Lightning in 2 steps 참고.
-Migration할 코드 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82  import torch device = &amp;#39;cuda&amp;#39; if torch.</description>
-      </item>
-      
-      <item>
-        <title>(5) : CRUD commands, DELETE</title>
-        <link>https://lyra95.github.io/docs/mysqltutorial/mysql-5/</link>
-        <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/mysqltutorial/mysql-5/</guid>
-        <description>DELETE는 어렵지 않습니다.
-id값이 3인 레코드를 지워봅시다.
-1 2  mysql&amp;gt;DELETEFROMtopicWHEREid=3;QueryOK,1rowaffected(0.00sec)   CAUTION : WHERE을 깜빡하면 모든 레코드가 지워집니다!
- SELECT로 테이블을 확인해봅시다.
-1 2 3 4 5 6 7 8 9 10  mysql&amp;gt;SELECT*FROMtopic;+----+------------+--------------------+---------------------+--------+--------------------------+ |id|title|description|created|author|profile|+----+------------+--------------------+---------------------+--------+--------------------------+ |1|MySQL|MySQLis...|2018-01-1000:00:00|egoing|developer||2|ORACLE|Oracleis...|2021-05-0618:17:04|egoing|developer||4|PostgreSQL|PostgreSQLis...|2021-05-0618:27:24|taeho|datascientist,developer||5|MongoDB|MongoDBis...|2021-05-0618:27:43|egoing|developer|+----+------------+--------------------+---------------------+--------+--------------------------+ 4rowsinset(0.00sec)  복습할 겸 이후에 레코드를 추가하면 어떻게 되나 봅시다.
- AUTO_INCREMENT가 어떻게 적용되나 봅시다.
- 1 2 3 4 5 6 7 8 9 10 11 12 13 14  mysql&amp;gt;INSERTINTOtopic(title,created)VALUES(&amp;#39;JO&amp;#39;,NOW());QueryOK,1rowaffected(0.00sec)mysql&amp;gt;SELECT*FROMtopic;+----+------------+--------------------+---------------------+--------+--------------------------+ |id|title|description|created|author|profile|+----+------------+--------------------+---------------------+--------+--------------------------+ |1|MySQL|MySQLis.</description>
       </item>
       
       <item>
@@ -508,31 +336,6 @@ id값이 3인 레코드를 지워봅시다.
         <description>Golang은 벤치마크 기능을 지원합니다. 테스트와 마찬가지로
    _test.go로 끝나는 파일에    testing 패키지를 임포트하고    func BenchmarkXxxx(b *testing.B) 형태로 함수를 작성하면 됩니다.    한 번 작성해 봅시다. (소스코드는 이전 포스트의 n이하의 소수의 개수를 리턴하는 함수 prime(n)를 참고하세요.)
 1 2 3 4 5 6 7 8 9 10  // prime_test.go package main import &amp;#34;testing&amp;#34; func BenchmarkPrime(b *testing.B) { for i := 0; i &amp;lt; b.</description>
-      </item>
-      
-      <item>
-        <title>Convolution (draft)</title>
-        <link>https://lyra95.github.io/docs/ml/convolution/</link>
-        <pubDate>Mon, 17 May 2021 14:45:03 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/ml/convolution/</guid>
-        <description>conv gifs
-블로그
-ConvTranspose docs
-A guide to convolution arithmetic for deep learning
-blog ConvT</description>
-      </item>
-      
-      <item>
-        <title>(6) : JOIN, 데이터 중복 최소화</title>
-        <link>https://lyra95.github.io/docs/mysqltutorial/mysql-6/</link>
-        <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/mysqltutorial/mysql-6/</guid>
-        <description>데이터 중복 문제 다음과 같이 topic table이 있습니다.
-1 2 3 4 5 6 7 8 9 10 11  mysql&amp;gt;select*fromtopic;+----+------------+--------------------+---------------------+--------+--------------------------+ |id|title|description|created|author|profile|+----+------------+--------------------+---------------------+--------+--------------------------+ |1|MySQL|MySQLis...|2018-01-1000:00:00|egoing|developer||2|ORACLE|Oracleis...|2021-05-0618:17:04|egoing|developer||3|SQLServer|SQLServeris...|2021-05-0620:20:24|duru|databaseadministrator||4|PostgreSQL|PostgreSQLis...|2021-05-0618:27:24|taeho|datascientist,developer||5|MongoDB|MongoDBis...|2021-05-0618:27:43|egoing|developer|+----+------------+--------------------+---------------------+--------+--------------------------+ 5rowsinset(0.00sec)  (author,profile)을 보면 (&amp;lsquo;egoing&amp;rsquo;,&amp;lsquo;developer&amp;rsquo;)가 전체 5개 레코드 중 3개의 레코드에서 반복되고 있습니다.
-만일 테이블이 훨씬 더 큰 사이즈여서 몇 만, 십 만 단위의 레코드가 있었더라면 저렇게 특정한 데이터들이 반복되지 않는게 좋습니다. 데이터의 크기가 몇 기가바이트 단위로 커도 역시 반복되지 않는게 좋습니다.
-테이블에 반복되는 데이터가 있으면 어떻게 해야할까요?</description>
       </item>
       
       <item>
@@ -668,32 +471,6 @@ strconv.ItoA(n int) string로 int-&amp;gt;string</description>
 Computer Science General   Crash Course: Computer Science (10/10)
 전산학과/컴공 입문생에게 &amp;ldquo;대충 너가 4년간 배울 내용이 이거야&amp;quot;하고 보여주고 싶다. 종이에 구멍 뚫던 시절 이야기, 트랜지스터로 논리 게이트 짜기, cpu/register bus, OS, Network 등등 없는 얘기가 없다. 이거 본다고 갑자기 Node.js 다룰 줄 알게되거나 하는 건 아니지만, 자신이 컴공상식이 부족하다고 생각되면 보길.
 OS편 어느 컴공 대학생의 코멘트: &amp;ldquo;Two semesters in 12 minutes.</description>
-      </item>
-      
-      <item>
-        <title>Effective Modern C&#43;&#43;(1)</title>
-        <link>https://lyra95.github.io/docs/cpp/effective-cpp/</link>
-        <pubDate>Wed, 28 Apr 2021 16:29:19 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/cpp/effective-cpp/</guid>
-        <description>Item4: Deduced type 확인하기 A. 에디터에 마우스 갖다대면 뜸 B. 컴파일러로 확인하기 다음과 같이 Declaration만 있고 Definition은 없는 class를 정의하자.
-1 2 3 4 5 6 7 8  template&amp;lt;typename T&amp;gt; // declaration only for TD; class TD; // TD == &amp;#34;Type Displayer&amp;#34;  int x; const int *y; // x랑 y의 type을 알고 싶다면... TD&amp;lt;decltype(x)&amp;gt; xType; // elicit errors containing TD&amp;lt;decltype(y)&amp;gt; yType; // x&amp;#39;s and y&amp;#39;s types   컴파일하면 컴파일러가 에러메세지로 deduced type을 알려준다.</description>
-      </item>
-      
-      <item>
-        <title>C&#43;&#43; containers in standard library (draft)</title>
-        <link>https://lyra95.github.io/docs/cpp/cpp-standard-library-containers/</link>
-        <pubDate>Wed, 28 Apr 2021 02:18:28 +0900</pubDate>
-        
-        <guid>https://lyra95.github.io/docs/cpp/cpp-standard-library-containers/</guid>
-        <description>Sequence Containers vector 기본 array의 강화판. array는 size 정보도 가지고 있지 않고, index bound error도 컴파일 타임에 체크해 주지 않는다. 반면에 vector는 다음과 같은 특징이 있다.
-[+] memory에 연속적으로 element들을 저장한다.
-[+] .size()를 통해 현재 element 개수를 알 수 있다.
-[+] array와 마찬가지로 constant time element access가 가능하다.
-[+] .at()같은 index bound를 체크해주는 member function들이 있다.
-[+] heap allocation 알아서 해준다. int x[n] 에러의 악몽
-[-] 타이핑하기 귀찮다 vector&amp;lt;vector&amp;lt;&amp;hellip;&amp;raquo;
-그러니 잘 모르겠으면 vector를 쓰자.</description>
       </item>
       
       <item>

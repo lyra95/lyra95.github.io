@@ -88,11 +88,6 @@
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/docs/flask/rest-api-1/</loc>
-    <lastmod>2021-06-11T18:31:49+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/docs/git/linux_command/</loc>
     <lastmod>2021-05-20T21:44:11+09:00</lastmod>
   </url>
@@ -113,11 +108,6 @@
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/docs/ml/install-local/</loc>
-    <lastmod>2021-05-10T16:45:27+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/docs/aws/ec2-1/</loc>
     <lastmod>2021-05-09T22:50:44+09:00</lastmod>
   </url>
@@ -133,23 +123,8 @@
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/docs/mysqltutorial/mysql-1/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/flask/rest-api-2/</loc>
-    <lastmod>2021-06-11T18:31:49+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/docs/python/python2/</loc>
     <lastmod>2021-05-15T16:13:15+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/ml/install-cloud.md/</loc>
-    <lastmod>2021-05-10T16:45:27+09:00</lastmod>
   </url>
   
   <url>
@@ -163,18 +138,8 @@
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/docs/mysqltutorial/mysql-2/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/docs/configurations/cl-exe-setting/</loc>
     <lastmod>2021-05-02T17:39:41+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/flask/rest-api-3/</loc>
-    <lastmod>2021-06-11T18:31:49+09:00</lastmod>
   </url>
   
   <url>
@@ -188,18 +153,8 @@
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/docs/ml/mnist/</loc>
-    <lastmod>2021-05-11T14:51:01+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/docs/aws/ec2-3/</loc>
     <lastmod>2021-05-10T19:36:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/mysqltutorial/mysql-3/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -208,18 +163,8 @@
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/docs/flask/rest-api-4/</loc>
-    <lastmod>2021-06-11T18:31:49+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/docs/python/argparse/</loc>
     <lastmod>2021-05-16T17:28:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/ml/mnist2/</loc>
-    <lastmod>2021-05-11T14:51:01+09:00</lastmod>
   </url>
   
   <url>
@@ -228,38 +173,13 @@
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/docs/mysqltutorial/mysql-4/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/docs/go/go-test-2/</loc>
     <lastmod>2021-04-25T18:18:20+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/docs/ml/mnist3/</loc>
-    <lastmod>2021-05-11T14:51:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/mysqltutorial/mysql-5/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/docs/go/go-benchmark/</loc>
     <lastmod>2021-04-25T18:18:20+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/ml/convolution/</loc>
-    <lastmod>2021-05-17T14:45:03+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/mysqltutorial/mysql-6/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -320,21 +240,6 @@
   <url>
     <loc>https://lyra95.github.io/docs/book-review/</loc>
     <lastmod>2021-05-08T00:29:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/flask/</loc>
-    <lastmod>2021-06-11T18:31:49+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/python/</loc>
-    <lastmod>2021-06-11T18:31:49+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/rest-api/</loc>
-    <lastmod>2021-06-11T18:31:49+09:00</lastmod>
   </url>
   
   <url>
@@ -433,18 +338,13 @@
   </url>
   
   <url>
+    <loc>https://lyra95.github.io/tags/python/</loc>
+    <lastmod>2021-05-16T17:28:58+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lyra95.github.io/tags/syntax/</loc>
     <lastmod>2021-05-15T16:13:15+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/mnist/</loc>
-    <lastmod>2021-05-11T14:51:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/pytorch/</loc>
-    <lastmod>2021-05-11T14:51:01+09:00</lastmod>
   </url>
   
   <url>
@@ -465,26 +365,6 @@
   <url>
     <loc>https://lyra95.github.io/tags/vscode/</loc>
     <lastmod>2021-05-10T19:36:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/cloud/</loc>
-    <lastmod>2021-05-10T16:45:27+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/cuda/</loc>
-    <lastmod>2021-05-10T16:45:27+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/machine-learning/</loc>
-    <lastmod>2021-05-10T16:45:27+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/ml/</loc>
-    <lastmod>2021-05-10T16:45:27+09:00</lastmod>
   </url>
   
   <url>
@@ -533,36 +413,6 @@
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/tags/config/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/crud/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/db/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/join/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/mysql/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/tutorial/</loc>
-    <lastmod>2021-05-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/tags/c&#43;&#43;/</loc>
     <lastmod>2021-05-02T17:39:41+09:00</lastmod>
   </url>
@@ -573,33 +423,8 @@
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/tags/auto/</loc>
-    <lastmod>2021-04-28T16:29:19+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/cpp/effective-cpp/</loc>
-    <lastmod>2021-04-28T16:29:19+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/type-deduction/</loc>
-    <lastmod>2021-04-28T16:29:19+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/algorithm/</loc>
-    <lastmod>2021-04-28T02:18:28+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/cpp/cpp-standard-library-containers/</loc>
-    <lastmod>2021-04-28T02:18:28+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/tags/data-structure/</loc>
-    <lastmod>2021-04-28T02:18:28+09:00</lastmod>
+    <loc>https://lyra95.github.io/tags/config/</loc>
+    <lastmod>2021-05-02T17:39:41+09:00</lastmod>
   </url>
   
   <url>
@@ -638,27 +463,12 @@
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/docs/cpp/</loc>
-    <lastmod>2020-04-28T00:34:39+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/docs/configurations/</loc>
     <lastmod>2020-04-28T00:34:39+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/docs/flask/</loc>
-    <lastmod>2020-04-28T00:34:39+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/docs/git/</loc>
-    <lastmod>2020-04-28T00:34:39+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/mysqltutorial/</loc>
     <lastmod>2020-04-28T00:34:39+09:00</lastmod>
   </url>
   
@@ -678,17 +488,7 @@
   </url>
   
   <url>
-    <loc>https://lyra95.github.io/docs/server/</loc>
-    <lastmod>2020-04-28T00:34:39+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lyra95.github.io/docs/go/</loc>
-    <lastmod>2020-01-28T00:34:39+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lyra95.github.io/docs/ml/</loc>
     <lastmod>2020-01-28T00:34:39+09:00</lastmod>
   </url>
   
