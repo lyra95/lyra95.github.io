@@ -1,0 +1,32 @@
+name: Deploy
+on:
+  workflow_dispatch:
+    inputs:
+      REF:
+        type: string
+        required: false
+        default: main
+  push:
+    branches:
+      - main
+jobs:
+  lint:
+    uses: ./.github/workflows/lint.yaml
+    with:
+      REF: ${{ inputs.REF }}
+  deploy:
+    runs-on: ubuntu-22.04
+    needs: [lint]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ inputs.REF }}
+      - uses: cachix/install-nix-action@v22
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+      - run: nix build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./result/public

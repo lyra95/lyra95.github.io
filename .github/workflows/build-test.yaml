@@ -1,0 +1,18 @@
+name: Build Test
+on:
+  workflow_call:
+    inputs:
+      REF:
+        type: string
+        required: true
+jobs:
+  build-test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ inputs.REF }}
+      - uses: cachix/install-nix-action@v22
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+      - run: nix build
