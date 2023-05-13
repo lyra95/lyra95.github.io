@@ -1,0 +1,9 @@
+[book]
+authors = ["lyra95"]
+title = "Sapienta Ducet Ad Astra"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+no-section-label = true
+git-repository-url = "https://github.com/lyra95/lyra95.github.io"
