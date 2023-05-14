@@ -1,0 +1,19 @@
+name: Lint
+on:
+  workflow_call:
+    inputs:
+      REF:
+        type: string
+        required: true
+jobs:
+  lint:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ inputs.REF }}
+      - uses: actions/setup-node@v3
+      - name: Check Typo
+        uses: crate-ci/typos@master
+      - name: Check dprint
+        run: npx dprint check
