@@ -9,7 +9,6 @@ jobs:
   # .github/workflows/deploy.yaml의 deploy job과 쌍을 이뤄야함
   deploy:
     runs-on: ubuntu-22.04
-    needs: [lint]
     steps:
       - uses: actions/checkout@v3
         with:
