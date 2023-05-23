@@ -6,6 +6,9 @@ on:
         type: string
         required: false
         default: main
+  push:
+    branches:
+      - main
 jobs:
   lint:
     uses: ./.github/workflows/lint.yaml
