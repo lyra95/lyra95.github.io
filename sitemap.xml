@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://lyra95.github.io/</loc>
+        <loc>lyra95.github.io/</loc>
     </url>
     <url>
-        <loc>https://lyra95.github.io/diary/2022/01-time-killing-with-html-and-css/</loc>
+        <loc>lyra95.github.io/misc/</loc>
     </url>
     <url>
-        <loc>https://lyra95.github.io/nix/01-getting-started/</loc>
+        <loc>lyra95.github.io/misc/time-killing-with-html-and-css/</loc>
+        <lastmod>2021-08-22</lastmod>
     </url>
 </urlset>

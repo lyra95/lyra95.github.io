@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://lyra95.github.io/sitemap.xml
+Sitemap: lyra95.github.io/sitemap.xml
