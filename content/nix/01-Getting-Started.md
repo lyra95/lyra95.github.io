@@ -1,5 +1,6 @@
 +++
 title = "Nix 시작해보기"
+draft = true
 +++
 
 # Nix 시작해보기

@@ -1,5 +1,6 @@
 +++
 title = "TIS-100 매뉴얼을 HTML/CSS로 옮기기"
+date = "2021-08-22"
 +++
 
 [TIS-100](https://store.steampowered.com/app/370360/TIS100/)이라는 스팀 퍼즐 게임이 있는데,
@@ -7,6 +8,6 @@ title = "TIS-100 매뉴얼을 HTML/CSS로 옮기기"
 
 글로 옮긴 사람은 봤지만, 원본 스캔본의 분위기를 살린 사람이 없어서 HTML/CSS로 옮겨봤다.
 
-[HTML/CSS로 쓴 매뉴얼](./01-Time-Killing-With-Html-and-CSS/index.html)
+[HTML/CSS로 쓴 매뉴얼](./resource/index.html)
 
-<embed type="text/html" src="./01-Time-Killing-With-Html-and-CSS/index.html" width="100%" height=1000px>
+<embed type="text/html" src="./resource/index.html" width="100%" height=1000px>
