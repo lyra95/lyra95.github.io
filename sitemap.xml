@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>lyra95.github.io/</loc>
+        <loc>https://lyra95.github.io/</loc>
     </url>
     <url>
-        <loc>lyra95.github.io/ko/</loc>
+        <loc>https://lyra95.github.io/ko/</loc>
     </url>
     <url>
-        <loc>lyra95.github.io/ko/misc/</loc>
+        <loc>https://lyra95.github.io/ko/misc/</loc>
     </url>
     <url>
-        <loc>lyra95.github.io/ko/misc/time-killing-with-html-and-css/</loc>
+        <loc>https://lyra95.github.io/ko/misc/time-killing-with-html-and-css/</loc>
         <lastmod>2021-08-22</lastmod>
     </url>
     <url>
-        <loc>lyra95.github.io/misc/</loc>
+        <loc>https://lyra95.github.io/misc/</loc>
     </url>
     <url>
-        <loc>lyra95.github.io/misc/time-killing-with-html-and-css/</loc>
+        <loc>https://lyra95.github.io/misc/time-killing-with-html-and-css/</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>lyra95.github.io/nix/</loc>
+        <loc>https://lyra95.github.io/nix/</loc>
     </url>
     <url>
-        <loc>lyra95.github.io/nix/0/</loc>
+        <loc>https://lyra95.github.io/nix/0/</loc>
     </url>
 </urlset>
