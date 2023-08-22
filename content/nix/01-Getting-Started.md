@@ -1,6 +1,7 @@
 +++
 title = "Nix 시작해보기"
-draft = true
+weight = 0
+slug = "0"
 +++
 
 # Nix 시작해보기

@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "lyra95.github.io"
+base_url = "https://lyra95.github.io"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -18,6 +18,18 @@ taxonomies = [
   { name = "tags", rss = true },
   { name = "authors", rss = true },
 ]
+
+[languages.ko]
+title = "Sapienta Ducet Ad Astra"
+[languages.en]
+title = "Sapienta Ducet Ad Astra"
+
+[search]
+include_title = true
+include_description = false
+include_path = false
+include_content = true
+index_format = "elasticlunr_javascript"
 
 [extra]
 # Put all your custom variables here
