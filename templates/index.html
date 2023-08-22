@@ -11,7 +11,6 @@
                   <li {% if current_path == subsection.path %}class="active"{% endif %}>
                       {% set chapter_num = loop.index %}
                       <a href="{{ subsection.permalink | safe }}">
-                          {% if config.extra.book_number_chapters %}<strong>{{ chapter_num }}.</strong>{% endif %}
                           {{ subsection.title }}
                       </a>
                       {% if subsection.pages %}
@@ -19,7 +18,6 @@
                               {% for page in subsection.pages %}
                                   <li {% if current_path == page.path %}class="active"{% endif %}>
                                       <a href="{{ page.permalink | safe }}">
-                                          {% if config.extra.book_number_chapters %}<strong>{{ chapter_num }}.{{ loop.index }}.</strong>{% endif %}
                                           {{ page.title }}
                                       </a>
                                   </li>
