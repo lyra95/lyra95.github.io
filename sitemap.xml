@@ -4,10 +4,26 @@
         <loc>lyra95.github.io/</loc>
     </url>
     <url>
+        <loc>lyra95.github.io/ko/</loc>
+    </url>
+    <url>
+        <loc>lyra95.github.io/ko/misc/</loc>
+    </url>
+    <url>
+        <loc>lyra95.github.io/ko/misc/time-killing-with-html-and-css/</loc>
+        <lastmod>2021-08-22</lastmod>
+    </url>
+    <url>
         <loc>lyra95.github.io/misc/</loc>
     </url>
     <url>
         <loc>lyra95.github.io/misc/time-killing-with-html-and-css/</loc>
-        <lastmod>2021-08-22</lastmod>
+        <lastmod>2023-08-22</lastmod>
+    </url>
+    <url>
+        <loc>lyra95.github.io/nix/</loc>
+    </url>
+    <url>
+        <loc>lyra95.github.io/nix/0/</loc>
     </url>
 </urlset>

@@ -1,0 +1,81 @@
+.title {
+  color: white;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  text-align: right;
+  font-size: 100pt;
+  font-family: monospace, sans-serif;
+  margin: 0%;
+}
+
+.sub-title {
+  text-align: right;
+  font-family: monospace, sans-serif;
+  margin: 0%;
+}
+
+.page-title {
+  text-align: center;
+  font-family: monospace, sans-serif;
+}
+
+.section {
+  font-family: monospace, sans-serif;
+}
+
+.subsection {
+  font-family: monospace, sans-serif;
+}
+
+.note {
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+.letter {
+  width: 10cm;
+  transform: rotate(10deg);
+  background-image: url(letter.jpg);
+  background-size: 100%;
+  margin: 2cm;
+}
+
+.letter-p {
+  font-family: "Brush Script MT", cursive;
+  text-indent: 150%;
+}
+
+hr.solid {
+  border-top: 3px solid;
+  color: #000;
+}
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+dt {
+  float: left;
+  width: 25%;
+  padding: 0;
+  margin: 0;
+}
+dd {
+  float: left;
+  width: 75%;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 21cm) {
+  body {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 30mm 45mm 30mm 45mm;
+  }
+  article {
+    page-break-after: always;
+  }
+}
