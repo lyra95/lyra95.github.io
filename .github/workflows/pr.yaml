@@ -12,7 +12,6 @@ jobs:
     with:
       REF: ${{ github.sha }}
   build-test:
-    needs: [lint]
     uses: ./.github/workflows/build-test.yaml
     with:
       REF: ${{ github.sha }}
