@@ -30,8 +30,9 @@ Dependency를 밑바닥까지 정확하게 pinning하는 걸 목표로하는, �
 ## Nix language
 
 Dependency 및 build/install step을 기술하기 위해 만들어진 언어다.
->예를 들어 zsh 플러그인 관리하는 zplug는 이렇게 기술된다.
->https://github.com/NixOS/nixpkgs/blob/master/pkgs/shells/zsh/zplug/default.nix
+
+> 예를 들어 zsh 플러그인 관리하는 zplug는 이렇게 기술된다.
+> https://github.com/NixOS/nixpkgs/blob/master/pkgs/shells/zsh/zplug/default.nix
 
 Dynamically Typed, Lazy and Functional한 언어이다.
 (이런 특성을 가지도록 디자인된 이유가 있는데 나중에 후술)
