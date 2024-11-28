@@ -35,6 +35,8 @@
         '';
       };
 
+      packages.dprint = pkgs.callPackage ./dprint.nix {};
+
       checks = {
         pre-commit = pre-commit.lib.${system}.run {
           src = ./.;
@@ -44,9 +46,8 @@
             prettier.enable = true;
             dprint = {
               enable = true;
-              package = pkgs.dprint;
               name = "dprint";
-              entry = "dprint check";
+              entry = "${self.packages.${system}.dprint}/bin/dprint check";
               pass_filenames = false;
             };
           };
