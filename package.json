@@ -2,7 +2,7 @@
 	"name": "lyra95.github.io",
 	"type": "module",
 	"workspaces": [
-		"packages/website"
+		"packages"
 	],
 	"scripts": {
 		"dev": "npm run dev -w website",
