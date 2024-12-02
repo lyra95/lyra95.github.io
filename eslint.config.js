@@ -18,6 +18,6 @@ export default [
 		}
 	},
 	{
-		ignores: ['build/', '.svelte-kit/', 'dist/']
+		ignores: ['packages/website/build/', '**/.svelte-kit/']
 	}
 ];
