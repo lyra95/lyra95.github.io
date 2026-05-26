@@ -1,0 +1,66 @@
+import Definition from '../../components/math-block/Definition.jsx'
+import Theorem from '../../components/math-block/Theorem.jsx'
+import Callout from '../../components/math-block/Callout.jsx'
+import { SphereTangentDiagram } from '@mathblog/diagrams'
+
+export const metadata = {
+    title: 'Tangent Spaces on a Manifold',
+    date: 'May 27, 2026',
+    tags: ['general-relativity', 'differential-geometry'],
+    draft: false,
+}
+
+## 개요
+
+주어진 manifold $M$ 위의 점 $p$에서 $M$과 접하는 vector space를 **tangent space**라고 부릅니다. (기호로는 $T_{p}M$라고 표시).
+그리고 이 tangent space에 속한 vector들을 **tangent vector**라고 부릅니다.
+
+<SphereTangentDiagram />
+
+그림에서 빨간색으로 표시된 영역이 tangent space이고, 점 $p$에서 sphere와 접하고 있습니다. 노란색 벡터 $v$는 tangent vector입니다.
+
+그림에서 $M$ (Sphere)은 **바깥 공간**인 $\mathbb{R}^{3}$에 놓여져 있습니다. tangent space가 $M$이 아닌 $M$의 바깥 공간에 놓여져 있다는 점에 주목할 필요가 있습니다.
+우리가 사는 공간이 4차원 시공간이라면, tangent vector들은 바깥 공간에 위치할 것입니다.
+하지만 시공간의 바깥 공간이라는게 존재할까요? 존재한다면 그곳은 어떤 종류의 물질로 채워져있어야 할까요?
+
+이러한 점이 물리학에서 manifold라는 다소 복잡한 개념이 채택한 이유 중에 하나 일 것입니다: 일반적으로 manifold는 바깥 공간을 가정하지 않습니다.
+놀라운 점은 **바깥 공간**이라는 개념이 없이도 manifold의 구조에 대해 아주 많은 것들을 발견할 수 있습니다. 마치 우리 선조들이 우주에 나가지 않고도 지구가 둥글다는 사실을 발견했듯이 말입니다.
+
+tangent vector 또한 바깥 공간의 도움 없이 정의될 수 있습니다.
+
+## Directional Derivative
+
+$v$가 점 p위의 tangent vector이고, 미분가능한 함수 $f: M \to R$이 있을 때, 점 p에서 $f$가 $v$방향으로 얼마나 증가하는지 값을 구할 수 있습니다.
+기초 미적분학에서 이를 directional derivative라고 부르며 다음과 같이 정의합니다:
+
+$$
+\nabla_{v} f(p) = \lim_{h \to 0} \frac{f(p + h v) - f(p)}{h}
+$$
+
+그리고 아래 세가지 성질이 있습니다:
+
+$$
+\begin{aligned}
+\text{(i)}\quad & \nabla_{v} (cf)(p) = c\nabla_{v} f(p) \\
+\text{(ii)}\quad & \nabla_{v} (f+g)(p) = \nabla_{v} f(p) + \nabla_{v} g(p) \\
+\text{(iii)}\quad & \nabla_{v} (fg)(p) = \nabla_{v} f(p)g(p) + f(p) \, \nabla_{v} g(p)
+\end{aligned}
+$$
+
+$v:C^{\infty}M \to \mathbb{R}$를 일종의 함수라는 관점으로 뒤틀어 볼 수 있습니다. $f\in C^{\infty}M$라는 인풋이 주어지면, $v$는 directional derivative라는 값을 출력합니다.
+
+$$
+v(f) = \nabla_{v} f(p)
+$$
+
+이러한 관점에서 세 가지 성질을 다시 적어보면,
+
+$$
+\begin{aligned}
+\text{(i)}\quad & v(cf) = c v(f) \\
+\text{(ii)}\quad & v(f+g) = v(f) + v(g) \\
+\text{(iii)}\quad & v(fg) = v(f)g + f v(g)
+\end{aligned}
+$$
+
+(i)와 (ii)는 $v$가 linear function임을 보여줍니다. (iii)는 Leibniz rule라고 불리는 특수한 성질입니다.

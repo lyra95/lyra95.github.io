@@ -1,0 +1,54 @@
+import { MathBlock, Callout, Definition, Exercise } from '../../components/math-block'
+import Area from './resources/area.svg?react'
+
+export const metadata = {
+  title: 'Differential Forms',
+  excerpt: '',
+  date: 'June 16, 2026',
+  tags: [],
+  draft: true,
+}
+
+
+## Alternating tensors
+
+For $(0,k)$ type tensors, those with alternating properties are of special interest.
+By alternating, it means if we switch any two input vectors, the output changes the sign.
+
+<MathBlock>
+    {
+    `A(...,u,...,v,...) = - A(...,v,...,u,...)`
+    }
+</MathBlock>
+
+An alternating tensor gives how we measure the size of $k$-cubes. Physically, it can represent a volume, area, or density etc.
+
+<Callout type="example">
+    A famous example is $Area: \mathbb{R}^3 \times \mathbb{R}^3 \to \mathbb{R}$, which takes two Euclidean vectors and returns the signed area of the parallelogram formed by them.
+    Because $Area(u,v) = -Area(v,u)$, it is alternating.
+
+    In the similar manner, $Det$ is an $(0,n)$-alternating tensor. It takes $n$ vectors (each lives in $\mathbb{R}^n$) and returns the signed volume of the n-dimensional hypercube formed by them.
+    <Area className="diagram" role="img" aria-label="Area" />
+</Callout>
+
+The set (vector space) of $(0,k)$ alternating tensors is denoted by $\Forms{k}{V}$.
+For $k=0$, it is just underlying Field $F$. Unioning (or direct sum in math jargon) all toghether, we call it the *Exterior Algebra*.
+
+<Definition term="Exterior Algebra">
+    $$
+    \Forms{}{V} = \bigoplus_{k=0}^{\infty} \Forms{k}{V}
+    $$
+</Definition>
+
+<Exercise>
+For $k > dim(V)$, show that $\Forms{k}{V}$ is a trivial vector space (only contains the zero vector).
+</Exercise>
+
+## Differential forms
+A *[k-form](https://en.wikipedia.org/wiki/Differential_form)* is an assignment of $(0, k)$ alternating tensor at each point.
+
+<Definition term="Differential form">
+    A smooth map $w: M \rightarrow \Forms{k}{TM}$ is called a *differential form* if $w(p) \in \Forms{k}{T_{p}M}$ and it varies smoothly at $p$ for all $p \in M$.
+</Definition>
+
+Because we rarely deal with non-differential things, we usually just call it a *k-form*.

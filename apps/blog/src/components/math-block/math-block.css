@@ -1,0 +1,150 @@
+/* Styles for the math-block component family:
+   MathBlock (KaTeX display), Theorem, Definition, Exercise, Proof, Callout.
+   Co-located with the components; each imports this file. */
+
+/* ── KaTeX display block ── */
+.math-block {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow-x: auto;
+  text-align: center;
+}
+
+.katex-display {
+  margin: 0 !important;
+}
+
+/* ── Theorem / Definition / Exercise / Proof / Callout ── */
+
+/* Shared base */
+.math-block-theorem,
+.math-block-definition,
+.math-block-exercise,
+.math-block-proof,
+.math-block-callout {
+  font-family: var(--font-sans);
+  border-radius: var(--radius-sm);
+  margin: 1.75rem 0;
+  padding: 1rem 1.25rem 1rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+.math-block-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.math-block-body {
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.math-block-body p { margin-bottom: 0.6rem; }
+.math-block-body p:last-child { margin-bottom: 0; }
+
+/* Theorem — indigo left border */
+.math-block-theorem {
+  background: #1a1d3a;
+  border-left: 3px solid var(--color-primary);
+}
+
+.math-block-theorem .math-block-label { color: var(--color-primary); }
+
+/* Definition — teal left border */
+.math-block-definition {
+  background: #0f2a2a;
+  border-left: 3px solid var(--color-accent);
+}
+
+.math-block-definition .math-block-label { color: var(--color-accent); }
+
+/* Exercise — amber left border */
+.math-block-exercise {
+  background: #2a1f0e;
+  border-left: 3px solid #fbbf24;
+}
+
+.math-block-exercise .math-block-label { color: #fbbf24; }
+
+/* Proof — collapsible, subtle */
+.math-block-proof {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 0;
+}
+
+.math-block-proof-summary {
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.math-block-proof-summary::-webkit-details-marker { display: none; }
+
+.math-block-proof-summary::before {
+  content: '▶';
+  font-size: 0.6rem;
+  transition: transform 0.15s;
+}
+
+.math-block-proof[open] .math-block-proof-summary::before {
+  transform: rotate(90deg);
+}
+
+.math-block-proof .math-block-body {
+  padding: 0 1.25rem 1rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.75rem;
+}
+
+.math-block-qed {
+  float: right;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* Callout variants */
+.math-block-callout {
+  border-left: 3px solid;
+}
+
+.math-block-callout-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.math-block-callout-icon { font-size: 0.9rem; }
+
+.math-block-callout--note    { background: #161f30; border-color: #60a5fa; }
+.math-block-callout--note    .math-block-callout-header { color: #60a5fa; }
+
+.math-block-callout--warning { background: #231a0e; border-color: #fbbf24; }
+.math-block-callout--warning .math-block-callout-header { color: #fbbf24; }
+
+.math-block-callout--example { background: #1a1f1a; border-color: #86efac; }
+.math-block-callout--example .math-block-callout-header { color: #86efac; }
+
+.math-block-callout--insight { background: #1e1428; border-color: #c084fc; }
+.math-block-callout--insight .math-block-callout-header { color: #c084fc; }

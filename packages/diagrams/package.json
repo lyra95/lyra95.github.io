@@ -1,0 +1,18 @@
+{
+  "name": "@mathblog/diagrams",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "dependencies": {
+    "katex": "^0.16.11",
+    "react-katex": "^3.0.1",
+    "three": "^0.169.0"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

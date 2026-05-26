@@ -1,0 +1,41 @@
+export const metadata = {
+  title: 'The Fundamental Theorem of Calculus',
+  excerpt: 'Differentiation and integration are inverse operations — but why? We build up the Fundamental Theorem from first principles and explore its geometric meaning.',
+  date: 'May 15, 2026',
+  tags: ['calculus', 'analysis', 'proofs'],
+  draft: true,
+}
+
+The Fundamental Theorem of Calculus (FTC) is the central result connecting
+differentiation and integration.
+
+## Part I
+
+Let $f$ be continuous on $[a, b]$ and define the accumulation function:
+
+$$F(x) = \int_a^x f(t)\, dt$$
+
+Then $F$ is differentiable on $(a, b)$ and $F'(x) = f(x)$.
+
+**Proof sketch.** By definition of the derivative and the Mean Value Theorem for Integrals,
+there exists $c_h \in [x, x+h]$ such that:
+
+$$F'(x) = \lim_{h \to 0} \frac{1}{h}\int_x^{x+h} f(t)\, dt = \lim_{h \to 0} f(c_h) = f(x) \qquad\square$$
+
+## Part II
+
+If $F$ is any antiderivative of $f$ on $[a,b]$, then:
+
+$$\int_a^b f(x)\, dx = F(b) - F(a)$$
+
+For example:
+
+$$\int_0^1 x^2\, dx = \left[\frac{x^3}{3}\right]_0^1 = \frac{1}{3}$$
+
+## A Worked Example
+
+Compute $\displaystyle\int_1^e \frac{\ln x}{x}\, dx$.
+
+Let $u = \ln x$, $du = dx/x$. When $x=1$, $u=0$; when $x=e$, $u=1$:
+
+$$\int_0^1 u\, du = \left[\frac{u^2}{2}\right]_0^1 = \frac{1}{2}$$

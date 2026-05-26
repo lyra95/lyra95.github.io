@@ -1,0 +1,45 @@
+export const metadata = {
+  title: 'Eigenvectors and Eigenvalues: What They Really Mean',
+  excerpt: 'Eigenvectors are directions that a linear transformation leaves unchanged (up to scaling). Understanding them unlocks PCA, differential equations, and Google PageRank.',
+  date: 'May 10, 2026',
+  tags: ['linear-algebra', 'applications'],
+  draft: true,
+}
+
+Given a square matrix $A$, a non-zero vector $\mathbf{v}$ is an **eigenvector** with
+**eigenvalue** $\lambda$ if:
+
+$$A\mathbf{v} = \lambda\mathbf{v}$$
+
+The transformation simply *scales* $\mathbf{v}$ — it doesn't rotate it off its span.
+
+## Finding Eigenvalues
+
+Rearranging: $(A - \lambda I)\mathbf{v} = \mathbf{0}$. For a non-trivial solution to exist:
+
+$$\det(A - \lambda I) = 0$$
+
+For the matrix $A = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix}$:
+
+$$\det\begin{pmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{pmatrix} = \lambda^2 - 7\lambda + 10 = 0$$
+
+So $\lambda = 5$ or $\lambda = 2$.
+
+## Finding Eigenvectors
+
+For $\lambda = 5$: solve $(A - 5I)\mathbf{v} = \mathbf{0}$, giving $\mathbf{v} = t\begin{pmatrix}1\\1\end{pmatrix}$.
+
+For $\lambda = 2$: $\mathbf{v} = t\begin{pmatrix}1\\-2\end{pmatrix}$.
+
+## The Spectral Theorem
+
+For a **symmetric** matrix ($A = A^T$), eigenvalues are always real and eigenvectors for
+distinct eigenvalues are orthogonal — the foundation of **PCA**.
+
+## PageRank
+
+Google's original PageRank finds the dominant eigenvector of a Markov transition matrix:
+
+$$\mathbf{r} = M\mathbf{r}$$
+
+where $M_{ij}$ is the probability of following a link from page $j$ to page $i$.

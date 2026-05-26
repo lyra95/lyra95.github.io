@@ -1,0 +1,33 @@
+export const metadata = {
+  title: "The Basel Problem: Euler's Stunning Solution",
+  excerpt: "In 1734, Euler shocked the mathematical world by proving that the sum of reciprocal squares equals π²/6. We walk through his original argument and a modern proof.",
+  date: 'May 4, 2026',
+  tags: ['analysis', 'number-theory', 'classics'],
+  draft: true,
+}
+
+The **Basel problem** asks for the exact value of:
+
+$$\sum_{n=1}^{\infty} \frac{1}{n^2} = 1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16} + \cdots$$
+
+## Euler's 1734 Proof
+
+Euler treated $\sin x$ as an infinite product over its zeros:
+
+$$\frac{\sin x}{x} = \prod_{n=1}^{\infty}\left(1 - \frac{x^2}{n^2\pi^2}\right)$$
+
+Expanding and matching the $x^2$ coefficient against the Taylor series $\frac{\sin x}{x} = 1 - \frac{x^2}{6} + \cdots$ gives:
+
+$$\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$$
+
+## A Rigorous Proof via Parseval's Theorem
+
+The Fourier series of $f(x) = x$ on $[-\pi, \pi]$ is $x = 2\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}\sin(nx)$.
+
+Applying **Parseval's identity**:
+
+$$\frac{1}{\pi}\int_{-\pi}^{\pi} x^2\,dx = 2\sum_{n=1}^{\infty}\frac{4}{n^2}$$
+
+$$\frac{2\pi^2}{3} = 8\sum_{n=1}^{\infty}\frac{1}{n^2}$$
+
+$$\sum_{n=1}^{\infty}\frac{1}{n^2} = \frac{\pi^2}{6} \qquad\square$$

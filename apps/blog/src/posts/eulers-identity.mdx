@@ -1,0 +1,45 @@
+export const metadata = {
+  title: "Euler's Identity: The Most Beautiful Equation",
+  excerpt: "Euler's identity connects five of the most important constants in mathematics in a single, breathtaking equation. We explore why e^{iπ} + 1 = 0 is so profound.",
+  date: 'May 20, 2026',
+  tags: ['analysis', 'complex-numbers', 'classics'],
+  draft: true,
+}
+
+Euler's identity is often called the most beautiful equation in mathematics:
+
+$$e^{i\pi} + 1 = 0$$
+
+It connects five fundamental constants: $e$ (the base of natural logarithms), $i$ (the imaginary unit), $\pi$ (the ratio of circumference to diameter), $1$ (the multiplicative identity), and $0$ (the additive identity).
+
+## Where Does It Come From?
+
+The identity is a special case of **Euler's formula**, which states that for any real number $\theta$:
+
+$$e^{i\theta} = \cos\theta + i\sin\theta$$
+
+Substituting $\theta = \pi$:
+
+$$e^{i\pi} = \cos\pi + i\sin\pi = -1 + 0 = -1$$
+
+And therefore $e^{i\pi} + 1 = 0$.
+
+## The Taylor Series Proof
+
+The cleanest way to prove Euler's formula is via Taylor series. Recall:
+
+$$e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots$$
+
+Substituting $x = i\theta$ and separating real and imaginary parts (using $i^2=-1$, $i^3=-i$, $i^4=1$, …) gives exactly $\cos\theta + i\sin\theta$.
+
+## Geometric Intuition
+
+On the complex plane, $e^{i\theta}$ traces the **unit circle** as $\theta$ varies.
+Setting $\theta = \pi$ rotates by 180°, landing at $-1$.
+
+> "Like a piece of art, the identity can be appreciated without understanding — but understanding it makes it even more beautiful."
+
+## Why It Matters
+
+Euler's formula is indispensable in signal processing, quantum mechanics, electrical engineering,
+and number theory — the Riemann zeta function $\zeta(s) = \sum_{n=1}^{\infty} n^{-s}$ being one example.

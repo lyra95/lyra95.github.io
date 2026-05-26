@@ -1,0 +1,88 @@
+import { Definition, Theorem, Callout } from '../../components/math-block'
+
+export const metadata = {
+  title: 'Spacetime and Curvature',
+  excerpt: 'General relativity replaces the flat arena of Newtonian mechanics with a curved spacetime whose geometry is shaped by mass and energy.',
+  date: 'May 26, 2026',
+  tags: ['general-relativity', 'physics', 'differential-geometry'],
+  draft: true,
+}
+
+In Newtonian mechanics, gravity is a *force* acting across empty space.
+Einstein's radical insight was that gravity is not a force at all — it is the **curvature of spacetime**
+caused by mass and energy.
+
+<Definition term="Spacetime">
+  The four-dimensional continuum combining three spatial dimensions and one time dimension.
+  Events are points $(t, x, y, z)$ in spacetime, and the geometry of this manifold determines
+  how objects move through it.
+</Definition>
+
+## The Metric Tensor
+
+The geometry of spacetime is encoded in the **metric tensor** $g_{\mu\nu}$, which defines
+how distances are measured. In flat (Minkowski) spacetime:
+
+$$ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2$$
+
+The negative sign on the time component is what distinguishes spacetime from ordinary
+Euclidean 4-space, and is responsible for the existence of a universal speed limit.
+
+In curved spacetime the metric becomes position-dependent:
+
+$$ds^2 = g_{\mu\nu}\, dx^\mu\, dx^\nu$$
+
+where we use Einstein summation convention — repeated indices are summed over.
+
+## Geodesics
+
+<Definition term="Geodesic">
+  The generalisation of a straight line to curved spacetime. A freely falling particle
+  (one subject to no forces other than gravity) follows a geodesic. The geodesic equation is:
+
+  $$\frac{d^2 x^\mu}{d\tau^2} + \Gamma^\mu_{\alpha\beta} \frac{dx^\alpha}{d\tau}\frac{dx^\beta}{d\tau} = 0$$
+
+  where $\tau$ is proper time and $\Gamma^\mu_{\alpha\beta}$ are the Christoffel symbols
+  encoding how the coordinate basis vectors change from point to point.
+</Definition>
+
+<Callout type="insight">
+  Planets orbit the Sun not because they are pulled by a force, but because they are
+  following the straightest possible paths (geodesics) through a spacetime curved by
+  the Sun's mass. What looks like a curved orbit in space is actually a straight line
+  in spacetime.
+</Callout>
+
+## Einstein's Field Equations
+
+The relationship between spacetime curvature and the energy-matter content is given by
+the **Einstein field equations**:
+
+$$G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}$$
+
+where:
+- $G_{\mu\nu} = R_{\mu\nu} - \tfrac{1}{2}R\,g_{\mu\nu}$ is the **Einstein tensor** (encodes curvature)
+- $\Lambda$ is the **cosmological constant** (associated with dark energy)
+- $T_{\mu\nu}$ is the **stress-energy tensor** (encodes matter and energy content)
+- $G$ is Newton's gravitational constant
+
+<Callout type="note">
+  Despite looking like a single equation, $G_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}$
+  is actually **10 coupled nonlinear partial differential equations** (since $\mu, \nu \in \{0,1,2,3\}$
+  and the tensors are symmetric). Finding exact solutions is extremely difficult.
+</Callout>
+
+## The Schwarzschild Solution
+
+The simplest exact solution, found by Karl Schwarzschild in 1916, describes the spacetime
+outside a spherically symmetric, non-rotating mass $M$:
+
+$$ds^2 = -\left(1 - \frac{r_s}{r}\right)c^2 dt^2 + \left(1 - \frac{r_s}{r}\right)^{-1}dr^2 + r^2 d\Omega^2$$
+
+where $r_s = \frac{2GM}{c^2}$ is the **Schwarzschild radius** and $d\Omega^2 = d\theta^2 + \sin^2\theta\, d\phi^2$.
+
+<Theorem name="Schwarzschild Radius">
+  Any mass $M$ compressed inside its Schwarzschild radius $r_s = 2GM/c^2$ forms a
+  **black hole** — a region from which not even light can escape.
+  For the Sun, $r_s \approx 3\text{ km}$; for the Earth, $r_s \approx 9\text{ mm}$.
+</Theorem>

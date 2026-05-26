@@ -1,0 +1,83 @@
+import { Definition, Theorem, Proof, Callout } from '../components/math-block'
+export const metadata = {
+  title: 'The Irrationality of √2',
+  excerpt: 'One of the oldest proofs in mathematics — and one of the most elegant. We prove that √2 cannot be expressed as a ratio of integers, then explore what that really means.',
+  date: 'May 26, 2026',
+  tags: ['number-theory', 'proofs', 'classics'],
+  draft: true,
+}
+
+The discovery that $\sqrt{2}$ is irrational reportedly shocked the Pythagoreans, who believed
+all of reality could be described by ratios of whole numbers. Legend has it that Hippasus,
+who revealed this fact, was drowned at sea for his heresy.
+
+<Definition term="Rational Number">
+  A number $r$ is **rational** if it can be written as $r = \dfrac{p}{q}$ where $p, q \in \mathbb{Z}$
+  and $q \neq 0$. We may always assume $\gcd(p, q) = 1$ (the fraction is in lowest terms).
+</Definition>
+
+<Definition term="Irrational Number">
+  A real number that is *not* rational. Irrational numbers cannot be expressed as a ratio of integers,
+  and their decimal expansions are non-terminating and non-repeating.
+</Definition>
+
+## The Classic Proof
+
+<Theorem name="Irrationality of √2">
+  $\sqrt{2} \notin \mathbb{Q}$. That is, there are no integers $p$ and $q$ with $\sqrt{2} = p/q$.
+</Theorem>
+
+<Proof>
+  Suppose for contradiction that $\sqrt{2} = p/q$ with $\gcd(p,q) = 1$.
+
+  Squaring both sides: $2 = p^2/q^2$, so $p^2 = 2q^2$.
+
+  This means $p^2$ is even, which implies $p$ is even (since the square of an odd number is odd).
+  Write $p = 2k$ for some integer $k$. Then:
+
+  $$(2k)^2 = 2q^2 \implies 4k^2 = 2q^2 \implies q^2 = 2k^2$$
+
+  So $q^2$ is also even, which implies $q$ is even.
+
+  But then both $p$ and $q$ are even, contradicting $\gcd(p,q) = 1$.
+</Proof>
+
+<Callout type="insight">
+  The proof uses only two facts: (1) if $n^2$ is even then $n$ is even, and (2) a fraction
+  in lowest terms cannot have both numerator and denominator divisible by 2.
+  This style of argument — *reductio ad absurdum* — is one of the most powerful tools in mathematics.
+</Callout>
+
+## A Generalisation
+
+The same argument works for any prime $p$.
+
+<Theorem name="Irrationality of √p">
+  For any prime $p$, $\sqrt{p}$ is irrational.
+</Theorem>
+
+<Proof>
+  Suppose $\sqrt{p} = a/b$ with $\gcd(a,b) = 1$. Then $a^2 = pb^2$, so $p \mid a^2$.
+  Since $p$ is prime, $p \mid a$, so write $a = pk$. Then $p^2k^2 = pb^2 \Rightarrow pk^2 = b^2$,
+  so $p \mid b^2$ and hence $p \mid b$. This contradicts $\gcd(a,b)=1$.
+</Proof>
+
+## Where Does √2 Live?
+
+We've shown $\sqrt{2} \notin \mathbb{Q}$, but it clearly exists as a geometric length (the diagonal
+of a unit square). This forces us to extend the rationals to the **real numbers** $\mathbb{R}$,
+which fill in all the "gaps" left by $\mathbb{Q}$.
+
+<Callout type="note">
+  The real numbers can be constructed from $\mathbb{Q}$ via *Dedekind cuts* or *Cauchy sequences*.
+  Either way, $\sqrt{2}$ ends up as the unique positive real $x$ satisfying $x^2 = 2$.
+</Callout>
+
+How "sparse" are the rationals inside the reals? Surprisingly sparse: the rationals have
+**measure zero** in $\mathbb{R}$ — in a precise sense, almost every real number is irrational.
+
+<Callout type="example">
+  Other famous irrationals: $\pi$, $e$, $\ln 2$, $\sqrt[3]{5}$. Even more numbers are
+  *transcendental* — not the root of any polynomial with integer coefficients.
+  $\pi$ and $e$ are transcendental; $\sqrt{2}$ is irrational but *algebraic*.
+</Callout>

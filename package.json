@@ -1,0 +1,16 @@
+{
+  "name": "mathblog",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @mathblog/blog",
+    "build": "npm run build -w @mathblog/blog",
+    "preview": "npm run preview -w @mathblog/blog",
+    "lint": "npm run lint -w @mathblog/blog",
+    "new": "npm run new -w @mathblog/blog"
+  }
+}
